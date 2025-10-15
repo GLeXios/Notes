@@ -454,7 +454,7 @@ JVM场景
 
 ![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps2.jpg?token=ARFL34DUIPUAKKTLGYJHUBTI563LE) 
 
-![img](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/wps3-4133580.jpg) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps3-4133580.jpg?token=ARFL34DUIPUAKKTLGYJHUBTI563LE) 
 
 ![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps4-4133580.jpg?token=ARFL34HIJJGYBFNI4KOW7BTI563LG) 
 
