@@ -426,7 +426,7 @@ JVM场景
    - 查找 `BLOCKED` 线程。
    - 检查死锁（`jstack` 会直接提示 `Found one Java-level deadlock`）。
 
-![image-20250424005128107](.pics/image-20250424005128107.png)
+![image-20250424005128107](./pics/image-20250424005128107.png)
 
 【**5. 数据库与外部依赖**】
 
@@ -450,13 +450,13 @@ JVM场景
 
 ## 如何防止url重复提交
 
-![img](.pics/wps1-4133580.jpg) 
+![img](./pics/wps1-4133580.jpg) 
 
-![img](.pics/wps2.jpg) 
+![img](./pics/wps2.jpg) 
 
-![img](.pics/wps3-4133580.jpg) 
+![img](./pics/wps3-4133580.jpg) 
 
-![img](.pics/wps4-4133580.jpg) 
+![img](./pics/wps4-4133580.jpg) 
 
 ## 如何实现主线程等待子线程完成后执行
 
@@ -794,13 +794,13 @@ public class SharedResource {
 
 ## 如果有个java进程cpu占有率特别高，如何排查问题
 
-![img](.pics/wps5-4133580.jpg) 
+![img](./pics/wps5-4133580.jpg) 
 
-![img](.pics/wps6-4133580.jpg) 
+![img](./pics/wps6-4133580.jpg) 
 
 ## SQL查询慢如何解决
 
-![img](.pics/wps7-4133580.jpg) 
+![img](./pics/wps7-4133580.jpg) 
 
 ## 大数据量下慢查询优化
 
@@ -870,17 +870,17 @@ public class SharedResource {
 
 **2.优化逻辑查询(sql优化)**
 
-![img](.pics/wps28-4133580.jpg)
+![img](./pics/wps28-4133580.jpg)
 
 **3.优化物理查询**
 
 ​	物理查询优化是在确定了逻辑查询优化之后，采用**物理优化技术（比如索引等）**，通过计算代价模型对各种可能的访问路径进行估算，从而找到执行方式中代价最小的作为执行计划。在这个部分中，我们需要掌握的重点是对索引的创建和使用。
 
-![image-20250319140846737](.pics/image-20250319140846737-4133580.png)
+![image-20250319140846737](./pics/image-20250319140846737-4133580.png)
 
 **4.使用Redis或Memcached作为缓存**
 
-![image-20250319141009256](.pics/image-20250319141009256-4133580.png)
+![image-20250319141009256](./pics/image-20250319141009256-4133580.png)
 
 ![image-20250319141016229](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250319141016229-4133580.png)
 
@@ -890,7 +890,7 @@ public class SharedResource {
 
 ![image-20250319141125708](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250319141125708-4133580.png)
 
-![image-20250319141150939](.pics/image-20250319141150939-4133580.png)
+![image-20250319141150939](./pics/image-20250319141150939-4133580.png)
 
 
 
@@ -942,7 +942,7 @@ public class SharedResource {
 
   ![image-20220628212029574](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20220628212029574-5386793.png)
 
-  ![image-20250319001708346](.pics/image-20250319001708346-5386793.png)
+  ![image-20250319001708346](./pics/image-20250319001708346-5386793.png)
 
   **type**
 
@@ -1126,7 +1126,7 @@ public class SharedResource {
 
 **前缀索引的工作原理**
 
-![image-20250424011630042](.pics/image-20250424011630042.png)
+![image-20250424011630042](./pics/image-20250424011630042.png)
 
 **前缀索引的缺点**
 
@@ -1292,9 +1292,9 @@ class Person {
 
 **输入文件准备**：需要预先生成`large_data.txt`，每行一个整数（示例中未提供生成代码，可参考`InMemorySort`中的随机数生成逻辑）。
 
-![image-20250410004933662](.pics/image-20250410004933662.png)
+![image-20250410004933662](./pics/image-20250410004933662.png)
 
-![image-20250410005028940](.pics/image-20250410005028940.png)
+![image-20250410005028940](./pics/image-20250410005028940.png)
 
 ![image-20250410005125989](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250410005125989.png)
 
@@ -1320,7 +1320,7 @@ class Person {
 
 我们可以先用前k个元素生成一个小顶堆，这个小顶堆用于存储当前k个元素，例子同上，可以构造小顶堆如下：
 
-![img](.pics/wps9-4554369.jpg)
+![img](./pics/wps9-4554369.jpg)
 
 1. 初始化一个小顶堆，其堆顶元素最小。
 2. 先将数组的前 k 个元素依次入堆。
@@ -1466,7 +1466,7 @@ Queue<Integer> topKHeap(int[] nums, int k) {
    2. 如果堆的大小 ==100，将当前词的频率与**堆顶元素（堆中频率最小的词）**的频率比较。
    3. 如果当前词的频率 ＞堆顶词的频率，则移除堆顶元素，并将当前（词，频率）对插入堆中。 • 当遍历完所有500 个小文件的所有词频信息后，小顶堆中剩下的100个元素就是全局频率最高的 100个词。
 
-![image-20250424000428406](.pics/image-20250424000428406.png)
+![image-20250424000428406](./pics/image-20250424000428406.png)
 
 #### 解法 2：多路归并排序方法
 
@@ -1488,7 +1488,7 @@ Queue<Integer> topKHeap(int[] nums, int k) {
 2. 遍历整个文件，一个单词一个单词地从文件中读取出来，并且进行计数。
 3. 等到遍历的单词和上一个单词不同的话，那么上一个单词及其频率如果大于堆顶的词的频率，那么放在堆中。否则不放
 
-![image-20250424000810643](.pics/image-20250424000810643.png)
+![image-20250424000810643](./pics/image-20250424000810643.png)
 
 ### 最热门的10个查询串
 
@@ -1535,9 +1535,9 @@ Queue<Integer> topKHeap(int[] nums, int k) {
 
 ## 如何提高数据库并发能力(大量访问)
 
-![img](.pics/wps11-4133580.jpg) 
+![img](./pics/wps11-4133580.jpg) 
 
-![img](.pics/wps12-4133580.jpg) 
+![img](./pics/wps12-4133580.jpg) 
 
 此外，一般应用对数据库而言都是“**读多写少**”，也就说对数据库读取数据的压力比较大，有一个思路就是采用数据库集群的方案，做主从架构、进行读写分离，这样同样可以提升数据库的并发处理能力。但并不是所有的应用都需要对数据库进行主从架构的设置，毕竟设置架构本身是有成本的。 
 
@@ -1741,9 +1741,9 @@ CREATE TABLE example (
 CREATE INDEX idx_d_e ON example (d, e);
 ```
 
-![image-20250430125202773](.pics/image-20250430125202773.png)
+![image-20250430125202773](./pics/image-20250430125202773.png)
 
-![image-20250430125213285](.pics/image-20250430125213285.png)
+![image-20250430125213285](./pics/image-20250430125213285.png)
 
 
 
@@ -1797,7 +1797,7 @@ CREATE INDEX idx_d_e ON example (d, e);
 
 - Kafka 0.8 以前，是没有 HA 机制的，就是任何一个 broker 宕机了，那个 broker 上的 partition 就废了，没法写也没法读，没有什么高可用性可言。比如说，我们假设创建了一个 topic，指定其 partition 数量是 3 个，分别在三台机器上。但是，如果第二台机器宕机了，会导致这个 topic 的 1/3 的数据就丢了，因此这个是做不到高可用的。
 
-  ![kafka-before](.pics/kafka-before.png)
+  ![kafka-before](./pics/kafka-before.png)
 
 **Kafka 的高可用性的体现**
 
@@ -1830,7 +1830,7 @@ CREATE INDEX idx_d_e ON example (d, e);
 
 - 如果消费者干的事儿是拿一条数据就往数据库里写一条，会导致说，你可能就把数据 1/2 在数据库里插入了 2 次，那么数据就错啦。
 
-  ![mq-10](.pics/mq-10.png)
+  ![mq-10](./pics/mq-10.png)
 
 **（2）保证幂等性**
 
@@ -2066,7 +2066,7 @@ CREATE INDEX idx_d_e ON example (d, e);
 
   - 利用容器化技术实现快速发布和资源隔离
 
-    ![image-20250512115708357](.pics/image-20250512115708357.png)
+    ![image-20250512115708357](./pics/image-20250512115708357.png)
 
 - **数据层** 
 
@@ -2525,7 +2525,7 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 
 通过 `-XX:+HeapDumpOnOutOfMemoryError` 和 `-XX:HeapDumpPath` 参数定位堆栈文件（`.hprof`）的生成路径。
 
-![image-20250514144511130](.pics/image-20250514144511130.png)
+![image-20250514144511130](./pics/image-20250514144511130.png)
 
 **<u>2）使用内存分析工具（visualvm、mat、jProfile 等）对堆快照文件进行分析。</u>**
 
@@ -2559,14 +2559,14 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 **（1）定位堆栈文件**
 
 - **JVM 参数配置** ：通过 `-XX:+HeapDumpOnOutOfMemoryError` 和 `-XX:HeapDumpPath` 参数定位堆栈文件（`.hprof`）的生成路径。
-  - 或者：![image-20250514151733172](.pics/image-20250514151733172-7208511.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](/Users/glexios/Library/Mobile%2520Documents/com~apple~CloudDocs/Notes/%25E9%259D%25A2%25E8%25AF%2595%25E8%25A1%25A5%25E5%2585%2585%25E7%25AC%2594%25E8%25AE%25B0.assets/image-20250514151755128.png)
-  - ![image-20250514151810247](.pics/image-20250514151810247-7208511.png)
+  - 或者：![image-20250514151733172](./pics/image-20250514151733172-7208511.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](/Users/glexios/Library/Mobile%2520Documents/com~apple~CloudDocs/Notes/%25E9%259D%25A2%25E8%25AF%2595%25E8%25A1%25A5%25E5%2585%2585%25E7%25AC%2594%25E8%25AE%25B0.assets/image-20250514151755128.png)
+  - ![image-20250514151810247](./pics/image-20250514151810247-7208511.png)
 
 - **容器环境限制** ：因测试环境部署在容器中，需通过 **容器 → 跳板机 → SFTP 服务器 → 本地开发机** 的链路下载堆栈文件
 
 **（2）堆栈文件分析**
 
-![image-20250514151936510](.pics/image-20250514151936510-7208511.png)
+![image-20250514151936510](./pics/image-20250514151936510-7208511.png)
 
 ​	通过 jvisualvm.exe 应用 文件 -> 装入 的方式导入刚才下载的文件，载入之后会有这样的选项卡
 
@@ -2580,17 +2580,17 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 
 - 我们这里由于 char 类实例数比较高，所有我优先往内存泄漏方向思考。
 
-![image-20250514152522535](.pics/image-20250514152522535-7208511.png)
+![image-20250514152522535](./pics/image-20250514152522535-7208511.png)
 
 **【实例数分析】**
 
-![image-20250514152658794](.pics/image-20250514152658794-7208511.png)
+![image-20250514152658794](./pics/image-20250514152658794-7208511.png)
 
 发现全是这种字符的实例，选中【实例】，右键可以分析【最近的垃圾回收节点】
 
 这里会显示这些对象为何没有被回收，一般是静态变量或者是全局对象引用导致。
 
-![image-20250514153311959](.pics/image-20250514153311959-7208511.png)
+![image-20250514153311959](./pics/image-20250514153311959-7208511.png)
 
 通过上面图片可以看出，图中主要是由静态字段导致
 
@@ -2608,7 +2608,7 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 
 但是调用 clear()的地方只有3处。正常来说凡是使用 ThreadLocal 的地方，set 和 clear() 都应该成对出现。
 
-![image-20250514153516478](.pics/image-20250514153516478-7208511.png)
+![image-20250514153516478](./pics/image-20250514153516478-7208511.png)
 
 **<u>（4）原因分析</u>**
 
@@ -2969,7 +2969,7 @@ jstack <PID> > /tmp/thread_dump.log
   - 分片处理大对象（如拆分集合）。
   - 调整 GC 参数（如 G1 的 `-XX:MaxGCPauseMillis`）。
 
-![image-20250514150555467](.pics/image-20250514150555467.png)
+![image-20250514150555467](./pics/image-20250514150555467.png)
 
 
 
@@ -2984,7 +2984,7 @@ jstack <PID> > /tmp/thread_dump.log
 
 【**一般来说，服务器故障诊断的整体思路如下**】
 
-<img src=".pics/20200309181645.png)
+<img src="./pics/20200309181645.png)
         at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
         - locked <0x00000000b5383ff0> (a java.lang.ref.Reference$Lock)
         at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
@@ -3129,7 +3129,7 @@ ss -tanp | grep -E 'TIME-WAIT|CLOSE-WAIT'
 | **TIME_WAIT**  | 主动关闭方 | 正常关闭流程的中间状态         | 端口耗尽（短连接场景） |
 | **CLOSE_WAIT** | 被动关闭方 | 未正确关闭连接（代码逻辑问题） | 连接泄漏、资源耗尽     |
 
-![image-20250411234839988](.pics/image-20250411234839988.png)
+![image-20250411234839988](./pics/image-20250411234839988.png)
 
 ![image-20250411234853716](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250411234853716.png)
 
@@ -3137,7 +3137,7 @@ ss -tanp | grep -E 'TIME-WAIT|CLOSE-WAIT'
 
 用 ss 命令会更快`ss -ant | awk '{++S[$1]} END {for(a in S) print a, S[a]}'`
 
-![img](.pics/2019-11-04-083830.png)
+![img](./pics/2019-11-04-083830.png)
 
 ##### TIME_WAIT
 
@@ -3197,7 +3197,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 每增加一个产品就要增加一个具体产品类和一个对应的具体工厂类，这增加了系统的复杂度
 
-![image-20250413110811534](.pics/image-20250413110811534.png)
+![image-20250413110811534](./pics/image-20250413110811534.png)
 
 ![image-20250413110825654](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413110825654.png)
 
@@ -3216,17 +3216,17 @@ net.ipv4.tcp_tw_recycle = 1
 - **抽象产品（Product）**：定义了产品的规范，描述了产品的主要特性和功能，抽象工厂模式有多个抽象产品。
 - **具体产品（ConcreteProduct）**：实现了抽象产品角色所定义的接口，由具体工厂来创建，它 同具体工厂之间是多对一的关系。
 
-![image-20250413121158977](.pics/image-20250413121158977.png)
+![image-20250413121158977](./pics/image-20250413121158977.png)
 
-![image-20250413121219845](.pics/image-20250413121219845.png)
+![image-20250413121219845](./pics/image-20250413121219845.png)
 
-![image-20250413121235402](.pics/image-20250413121235402.png)
+![image-20250413121235402](./pics/image-20250413121235402.png)
 
 ![image-20250413121319600](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413121319600.png)
 
 ### 手写单例（singleton）设计模式
 
-![image-20250409002955025](.pics/image-20250409002955025-4541422.png)
+![image-20250409002955025](./pics/image-20250409002955025-4541422.png)
 
 **单例模式的优点：**
 
@@ -3236,7 +3236,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 **懒汉式**：好处:延迟对象的创建;坏处:目前的写法，会线程不安全。---》到多线程内容时，再修改
 
-![image-20250409002716615](.pics/image-20250409002716615-4541422.png)
+![image-20250409002716615](./pics/image-20250409002716615-4541422.png)
 
 #### 饿汉式
 
@@ -3252,7 +3252,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 #### 单例模式之懒汉式（双重校验锁）
 
-![img](.pics/wps16-4541422.jpg) 
+![img](./pics/wps16-4541422.jpg) 
 
 假设有两个线程a和b调用getInstance()方法，假设a先走，一路走到4这一步，执行instance = new Singleton()这句代码
 
@@ -3268,7 +3268,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 ![img](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/wps17-4133580-4541422.jpg) 
 
-![img](.pics/wps18-4133580-4541422.jpg) 
+![img](./pics/wps18-4133580-4541422.jpg) 
 
 源码中我们可以看见这么一句话，如果你的这个类型是枚举类型，想要通过反射去创建对象时会抛出一个异常（不能通过反射创建枚举对象）
 
@@ -3313,7 +3313,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 - 测试类直接访问的是ProxyPoint类对象，也就是说ProxyPoint作为访问对象和目标对象的中介。同时也对sell方法进行了增强（代理点收取一些服务费用）。
 
-![image-20250413162618013](.pics/image-20250413162618013.png)
+![image-20250413162618013](./pics/image-20250413162618013.png)
 
 #### JDK动态代理
 
@@ -3330,7 +3330,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 ![image-20250413170951871](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413170951871.png)
 
-![image-20250413170929023](.pics/image-20250413170929023.png)
+![image-20250413170929023](./pics/image-20250413170929023.png)
 
 ![image-20250413171006093](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413171006093.png)
 
@@ -3350,9 +3350,9 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 </dependency>
 ```
 
-![image-20250413174723864](.pics/image-20250413174723864.png)
+![image-20250413174723864](./pics/image-20250413174723864.png)
 
-![image-20250413174734589](.pics/image-20250413174734589.png)
+![image-20250413174734589](./pics/image-20250413174734589.png)
 
 #### jdk代理和CGLIB代理
 
@@ -3387,11 +3387,11 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 
 **eg：现有一台电脑只能读取SD卡，而要读取TF卡中的内容的话就需要使用到适配器模式。创建一个读卡器，将TF卡中的内容读取出来。**
 
-![image-20250413175617523](.pics/image-20250413175617523.png)
+![image-20250413175617523](./pics/image-20250413175617523.png)
 
-![image-20250413175635827](.pics/image-20250413175635827.png)
+![image-20250413175635827](./pics/image-20250413175635827.png)
 
-![image-20250413175657625](.pics/image-20250413175657625.png)
+![image-20250413175657625](./pics/image-20250413175657625.png)
 
 ![image-20250413175710818](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413175710818.png)
 
@@ -3424,11 +3424,11 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 - **动态责任传递** ：通过 `setNextHandler` 构建处理链，符合开闭原则
 - 每个处理者通过 `canHandle()` 决策是否继续传递请求（通过随机数模拟不同角色的处理成功率，体现能力差异）
 
-![image-20250411225326371](.pics/image-20250411225326371-4541422.png)
+![image-20250411225326371](./pics/image-20250411225326371-4541422.png)
 
-![image-20250411225341196](.pics/image-20250411225341196-4541422.png)
+![image-20250411225341196](./pics/image-20250411225341196-4541422.png)
 
-![image-20250411225459145](.pics/image-20250411225459145-4541422.png)
+![image-20250411225459145](./pics/image-20250411225459145-4541422.png)
 
 ### 模板方法模式
 
@@ -3463,7 +3463,7 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413181741405.png" alt="image-20250413181741405" style="zoom:40%;" />
 
-<img src=".pics/image-20250413181812398.png);
+<img src="./pics/image-20250413181812398.png);
 }
 //2.定义具体观察者类，微信用户是观察者，里面实现了更新的方法
 public class WeixinUser implements Observer {
@@ -3682,7 +3682,7 @@ public class demo {
 
 在多线程开发当中，如果生产者处理速度很快，而消费者处理速度很慢，那么生产者就必须等待消费者处理完，才能继续生产数据。同样的道理，如果消费者的处理能力大于生产者，那么消费者就必须等待生产者。
 
-![img](.pics/wps13.png) 
+![img](./pics/wps13.png) 
 
 当缓冲区满的时候，生产者停止执行，让其他线程进行
 
@@ -3694,7 +3694,7 @@ public class demo {
 
 **等待通知机制wait/notify/notifyAll**
 
-![image-20250310233338783](.pics/image-20250310233338783-4133580.png)
+![image-20250310233338783](./pics/image-20250310233338783-4133580.png)
 
 - `wait` - `wait` 会自动**释放当前线程占有的对象锁**，并请求操作系统挂起当前线程，**让线程从 `Running` 状态转入 `Waiting` 状态**，等待 `notify` / `notifyAll` 来唤醒。如果没有释放锁，那么其它线程就无法进入对象的同步方法或者同步控制块中，那么就无法执行 `notify` 或者 `notifyAll` 来唤醒挂起的线程，造成死锁。
 - `notify` - 唤醒一个正在 `Waiting` 状态的线程，并让它拿到对象锁，具体唤醒哪一个线程由 JVM 控制 
@@ -3723,9 +3723,9 @@ public class demo {
 
 - 如果调用某个对象的 `wait` 方法，当前线程必须拥有这个对象的对象锁，因此调用 `wait` 方法必须在 `synchronized` 方法和 `synchronized` 代码块中，如果没有获取到锁前调用wait()方法，会抛出java.lang.IllegalMonitorStateException异常。
 
-![image-20250409013043263](.pics/image-20250409013043263.png)
+![image-20250409013043263](./pics/image-20250409013043263.png)
 
-![image-20250409013058767](.pics/image-20250409013058767.png)
+![image-20250409013058767](./pics/image-20250409013058767.png)
 
 ![image-20250409013131548](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250409013131548.png)
 
@@ -3808,7 +3808,7 @@ public class demo {
 
 ## 手写单例（singleton）设计模式
 
-![image-20250409002955025](.pics/image-20250409002955025.png)
+![image-20250409002955025](./pics/image-20250409002955025.png)
 
 **单例模式的优点：**
 
@@ -3824,23 +3824,23 @@ public class demo {
 
 坏处:对象加载时间过长;好处:饿汉式是线程安全的。
 
-![image-20250409002741419](.pics/image-20250409002741419.png)
+![image-20250409002741419](./pics/image-20250409002741419.png)
 
 ### 懒汉式
 
 好处:延迟对象的创建;坏处:目前的写法，会线程不安全。---》到多线程内容时，再修改
 
-![img](.pics/wps15-4133580.jpg)
+![img](./pics/wps15-4133580.jpg)
 
 ### 单例模式之懒汉式（双重校验锁）
 
-![img](.pics/wps16.jpg) 
+![img](./pics/wps16.jpg) 
 
 假设有两个线程a和b调用getInstance()方法，假设a先走，一路走到4这一步，执行instance = new Singleton()这句代码
 
 这里如果变量声明不使用volatile关键字，是可能会发生错误的。它可能会被重排序：
 
-![image-20251015225606695](.pics/image-20251015225606695.png)
+![image-20251015225606695](./pics/image-20251015225606695.png)
 
 ​	此时，线程b刚刚进来执行到1（看上面的代码块），就有可能会看到instance不为null，然后线程b也就不会等待监视器锁，而是直接返回instance。问题是这个instance可能还没执行完构造方法（线程a此时还在4这一步），所以**线程b拿到的instance是不完整的**，**它里面的属性值可能是初始化的零值(0/false/null)，而不是线程a在构造方法中指定的值**。
 
@@ -3850,7 +3850,7 @@ public class demo {
 
 ![img](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/wps17-4133580.jpg) 
 
-![img](.pics/wps18-4133580.jpg) 
+![img](./pics/wps18-4133580.jpg) 
 
 源码中我们可以看见这么一句话，如果你的这个类型是枚举类型，想要通过反射去创建对象时会抛出一个异常（不能通过反射创建枚举对象）
 
@@ -3868,9 +3868,9 @@ public class demo {
 
 - **`Object.wait()` 方法可能因系统中断或其他原因提前返回（虚假唤醒），此时线程需要重新检查条件是否满足。**
 
-![image-20250409003447207](.pics/image-20250409003447207.png)
+![image-20250409003447207](./pics/image-20250409003447207.png)
 
-![image-20250409003515747](.pics/image-20250409003515747.png)
+![image-20250409003515747](./pics/image-20250409003515747.png)
 
 ![image-20250409003519564](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250409003519564.png)
 
@@ -3882,7 +3882,7 @@ public class demo {
 
 **`private static volatile Object lock = new Object();`**
 
-![image-20251015225639301](.pics/image-20251015225639301.png)
+![image-20251015225639301](./pics/image-20251015225639301.png)
 
 ![image-20250409003948350](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250409003948350.png)
 
@@ -3892,7 +3892,7 @@ public class demo {
 
 - 跟两个线程交替打印奇数和偶数的对象监视器一样实现
 
-![image-20250409004226701](.pics/image-20250409004226701.png)
+![image-20250409004226701](./pics/image-20250409004226701.png)
 
 ![image-20250409004230498](file:///Users/glexios/Library/Mobile%20Documents/com~apple~CloudDocs/Notes/%E5%9C%BA%E6%99%AF%E9%A2%98+%E9%A1%B9%E7%9B%AE%E6%8E%92%E6%9F%A5%E9%97%AE%E9%A2%98+%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F+%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81+Streamis.assets/image-20250409004230498.png?lastModify=1760538619)
 
@@ -3902,11 +3902,11 @@ public class demo {
 
 ​	用等待唤醒机制，当一个线程执行完当前任务后再唤醒其他线程来执行任务，自己去休眠，避免在线程执行任务的时候其他线程处于忙等状态，浪费cpu资源。
 
-![image-20250409012732358](.pics/image-20250409012732358.png)
+![image-20250409012732358](./pics/image-20250409012732358.png)
 
-![image-20250409012740339](.pics/image-20250409012740339.png)
+![image-20250409012740339](./pics/image-20250409012740339.png)
 
-![image-20250409012745730](.pics/image-20250409012745730.png)
+![image-20250409012745730](./pics/image-20250409012745730.png)
 
 
 
@@ -4020,7 +4020,7 @@ Streamis集群服务都会设置有告警，统一使用zabbix进行告警，主
 
   - 查看服务进程的堆栈信息，判断线程有无block或者死锁:`jstack $pid`
 
-    <img src=".pics/image-20250414095454090.png" alt="image-20250414095454090" style="zoom:40%;" />
+    <img src="./pics/image-20250414095454090.png" alt="image-20250414095454090" style="zoom:40%;" />
 
   - 查看垃圾回收相关信息：gc次数、gc时间等。`jstat -gcutil $pid`
 
@@ -4205,7 +4205,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 ​	在近期测试环境中，应用进程频繁被 `OutOfMemoryError`（OOM）异常触发的 JVM 机制强制终止，而生产环境从未发生类似问题。
 
-![image-20250514151546545](.pics/image-20250514151546545.png)
+![image-20250514151546545](./pics/image-20250514151546545.png)
 
 初步怀疑可能由以下原因导致：
 
@@ -4218,8 +4218,8 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 **（1）定位堆栈文件**
 
 - **JVM 参数配置** ：通过 `-XX:+HeapDumpOnOutOfMemoryError` 和 `-XX:HeapDumpPath` 参数定位堆栈文件（`.hprof`）的生成路径。
-  - 或者：![image-20250514151733172](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试补充笔记.assets/image-20250514151733172.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](.pics/image-20250514151755128.png)
-  - ![image-20250514151810247](.pics/image-20250514151810247.png)
+  - 或者：![image-20250514151733172](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试补充笔记.assets/image-20250514151733172.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](./pics/image-20250514151755128.png)
+  - ![image-20250514151810247](./pics/image-20250514151810247.png)
 
 - **容器环境限制** ：因测试环境部署在容器中，需通过 **容器 → 跳板机 → SFTP 服务器 → 本地开发机** 的链路下载堆栈文件
 
@@ -4231,7 +4231,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 - 在概要的地方就给出了出问题的关键线程：发现 OOM 原因为 **堆内存溢出（Java heap space）** ，将堆栈信息点进去，发现堆栈是由于字符串的复制操作导致发生了 oom。
 - 同时通过堆栈信息可以定位到 UnitTestContextHolder.java 类
-- ![image-20250514152614559](.pics/image-20250514152614559.png)
+- ![image-20250514152614559](./pics/image-20250514152614559.png)
 
 **【类分析】**
 
@@ -4243,13 +4243,13 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 **【实例数分析】**
 
-![image-20250514152658794](.pics/image-20250514152658794.png)
+![image-20250514152658794](./pics/image-20250514152658794.png)
 
 发现全是这种字符的实例，选中【实例】，右键可以分析【最近的垃圾回收节点】
 
 这里会显示这些对象为何没有被回收，一般是静态变量或者是全局对象引用导致。
 
-![image-20250514153311959](.pics/image-20250514153311959.png)
+![image-20250514153311959](./pics/image-20250514153311959.png)
 
 通过上面图片可以看出，图中主要是由静态字段导致
 
@@ -4259,7 +4259,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 ![image-20250514153410531](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250514153410531.png)
 
-![image-20250514153435758](.pics/image-20250514153435758.png)
+![image-20250514153435758](./pics/image-20250514153435758.png)
 
 这里使用到了 ThreadLocal 做一些对象的存储，但是我发现 调用 setAttribute(String key,Object value)的地方有 33 处
 
@@ -4267,7 +4267,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 但是调用 clear()的地方只有3处。正常来说凡是使用 ThreadLocal 的地方，set 和 clear() 都应该成对出现。
 
-![image-20250514153516478](.pics/image-20250514153516478.png)
+![image-20250514153516478](./pics/image-20250514153516478.png)
 
 **<u>（4）原因分析</u>**
 
@@ -4385,7 +4385,7 @@ echo ${FLINK_HOME
 
 `Linkis` 的 `Flink` 引擎是通过 `flink on yarn` 的方式进行启动的,所以需要指定用户使用的队列，如下图所示
 
-![yarn](.pics/yarn-conf-395feb3695fdbf71df62544d5df21ad3.png)
+![yarn](./pics/yarn-conf-395feb3695fdbf71df62544d5df21ad3.png)
 
 #### 通过 `Linkis-cli` 提交任务（Shell方式）
 
@@ -4554,17 +4554,17 @@ linkis 提供的客户端认证方式都支持Token策略模式`new TokenAuthent
 
 ![image-20250409163643310](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250409163643310.png)
 
-![image-20250409163819159](.pics/image-20250409163819159.png)
+![image-20250409163819159](./pics/image-20250409163819159.png)
 
-![image-20250409163900622](.pics/image-20250409163900622.png)
+![image-20250409163900622](./pics/image-20250409163900622.png)
 
-![image-20250409163918570](.pics/image-20250409163918570.png)
+![image-20250409163918570](./pics/image-20250409163918570.png)
 
 
 
 ## Steamis已有能力现状
 
-![image-20250409164209968](.pics/image-20250409164209968.png)
+![image-20250409164209968](./pics/image-20250409164209968.png)
 
 ## Streamis简介
 
@@ -4586,7 +4586,7 @@ linkis 提供的客户端认证方式都支持Token策略模式`new TokenAuthent
 
 **【依赖的生态组件】**
 
-![企业微信截图_17424615822243](.pics/企业微信截图_17424615822243.png)
+![企业微信截图_17424615822243](./pics/企业微信截图_17424615822243.png)
 
 **【Streamis功能介绍】**
 
@@ -4609,7 +4609,7 @@ linkis 提供的客户端认证方式都支持Token策略模式`new TokenAuthent
 - 用户通过标准模板填入必需的参数，而不需要的参数就可以直接删去，因此可以在保证规范的同时拥有一定的定制自由，能够大大降低开发的成本。
 - 用户通过把meta.json和相关资源文件打入一个zip包上传至Streamis的服务器，Streamis就可以自动将相关信息拆解后形成一个job，相关资源文件则通过对接linkis到bml物料管理系统（实际使用HDFS文件进行数据存储）进行持久化。
 
-![flinkjar_metajson](.pics/flinkjar_metajson.png)
+![flinkjar_metajson](./pics/flinkjar_metajson.png)
 
 meta.json是StreamisJob的元数据信息，其格式为：
 
@@ -4679,9 +4679,9 @@ meta.json是StreamisJob的元数据信息，其格式为：
   - 项目工程级别的物料则可以通过工程物料导入接口进行上传，整个项目的job作业都能共享这个物料
   - 加载物料的顺序为：先加载job级别的物料，若没有则加载项目工程级别的物料
 
-![企业微信截图_17425468956360](.pics/企业微信截图_17425468956360.png)
+![企业微信截图_17425468956360](./pics/企业微信截图_17425468956360.png)
 
-![企业微信截图_17424613143934](.pics/企业微信截图_17424613143934.png)
+![企业微信截图_17424613143934](./pics/企业微信截图_17424613143934.png)
 
 **【维护一个flink应用的完整生命周期】**
 
@@ -4695,7 +4695,7 @@ meta.json是StreamisJob的元数据信息，其格式为：
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250321163422704.png" alt="image-20250321163422704" style="zoom:100%;" />
 
-![企业微信截图_17424614571701](.pics/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17424614571701.png)
+![企业微信截图_17424614571701](./pics/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17424614571701.png)
 
 **【对flink作业的配置】**
 
@@ -4784,7 +4784,7 @@ meta.json是StreamisJob的元数据信息，其格式为：
 
 ecm资源也跟ec差不多，可以从linkis管理台进行管理，决定起多少ecm
 
-![image-20250410001904370](.pics/image-20250410001904370-4602709.png)
+![image-20250410001904370](./pics/image-20250410001904370-4602709.png)
 
 
 
@@ -4810,7 +4810,7 @@ ecm资源也跟ec差不多，可以从linkis管理台进行管理，决定起多
 
 #### flink分离式引擎设计细节
 
-<img src=".pics/image-20250324174150782.png" alt="image-20250324174150782" style="zoom:30%;" />
+<img src="./pics/image-20250324174150782.png" alt="image-20250324174150782" style="zoom:30%;" />
 
 **【整体流程】**
 
@@ -4820,7 +4820,7 @@ ecm资源也跟ec差不多，可以从linkis管理台进行管理，决定起多
 
 - **创建Flink Manager引擎、查询status和save详细过程**
 
-![image-20250324175646677](.pics/image-20250324175646677.png)
+![image-20250324175646677](./pics/image-20250324175646677.png)
 
 ​	status、kill操作均为通用操作，可以走ECM。save、doCheckPoint为flink专有操作，需要走flink管理引擎。
 
@@ -4997,7 +4997,7 @@ def init(): Unit
 
 **<u>1）【使用 Utils.defaultScheduler.scheduleAtFixedRate 实现周期性任务监控】</u>**
 
-![image-20250321222103386](.pics/image-20250321222103386.png)
+![image-20250321222103386](./pics/image-20250321222103386.png)
 
 **`Utils.defaultScheduler.scheduleAtFixedRate`：**创建一个固定频率的定时任务。
 
@@ -5036,7 +5036,7 @@ def init(): Unit
 
 <u>**2）【在服务启动时清理未完成的任务（处于STARTING状态）】**</u>
 
-![image-20250321222808369](.pics/image-20250321222808369.png)
+![image-20250321222808369](./pics/image-20250321222808369.png)
 
 通过**`wds.streamis.job.reset_on_restart.enable`配置**是否在服务启动时清理未完成的任务
 
@@ -5115,7 +5115,7 @@ def doMonitor(): Unit
 
 ##### 重启任务
 
-![image-20250321235316245](.pics/image-20250321235316245.png)
+![image-20250321235316245](./pics/image-20250321235316245.png)
 
 - 调用 restartJob 方法，尝试重新启动任务。
 - 检查自动恢复开关配置**fail_restart_switch**，发现为 "ON"。
@@ -5139,9 +5139,9 @@ def doMonitor(): Unit
 - **多集群高可用发布**：就是将物料包推送到streamis服务上，包括单活、双活、双活灾等高可用策略
 - **多集群一致性启动**：检查集群物料的一致性，根据高可用策略启动不同集群上的作业
 
-![image-20250323223747645](.pics/image-20250323223747645.png)
+![image-20250323223747645](./pics/image-20250323223747645.png)
 
-<img src=".pics/image-20250323223709881.png" alt="image-20250323223709881" style="zoom:45%;" />
+<img src="./pics/image-20250323223709881.png" alt="image-20250323223709881" style="zoom:45%;" />
 
 #### 多集群高可用发布
 
@@ -5155,7 +5155,7 @@ def doMonitor(): Unit
 - 在cmdb平台上登记flink应用高可用架构以及信息，发布前会校验；
 - 正式发布流程，通过高可用策略把物料发步到不同集群，带上source的jsaon字段，包括了物料包md5、发布人、一致性标志位等信息，为后续一致性启动做准备
 
-<img src=".pics/image-20250323223324926.png" alt="image-20250323223324926" style="zoom:30%;" />
+<img src="./pics/image-20250323223324926.png" alt="image-20250323223324926" style="zoom:30%;" />
 
 ##### 物料包打包格式
 
@@ -5242,7 +5242,7 @@ def doMonitor(): Unit
 
 - 比如对于容灾集群只能发布策略中带BAK的job，比如singleWithBak、doublewithbak、managerslavewithbak。因此我们会在发布前进行 批量检查，检查当前任务的“wds.streamis.app.highavailable.policy”参数值是否符合当前发布集群的高可用策略，如果不符合条件，则检查失败。
 
-![image-20250326170920888](.pics/image-20250326170920888.png)
+![image-20250326170920888](./pics/image-20250326170920888.png)
 
 ##### 在cmdb平台上登记flink应用高可用架构以及信息
 
@@ -5252,9 +5252,9 @@ def doMonitor(): Unit
 
 ​	同时使用定时脚本巡检高可用策略与cmdb登记的是否一致
 
-<img src=".pics/image-20250326171314170.png" alt="image-20250326171314170" style="zoom:90%;" />
+<img src="./pics/image-20250326171314170.png" alt="image-20250326171314170" style="zoom:90%;" />
 
-![image-20250326171339510](.pics/image-20250326171339510.png)
+![image-20250326171339510](./pics/image-20250326171339510.png)
 
 
 
@@ -5282,7 +5282,7 @@ job-list
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250326172332530.png" alt="image-20250326172332530" style="zoom: 33%;" />
 
-<img src=".pics/image-20250326172342828.png));
+<img src="./pics/image-20250326172342828.png));
   ```
 
 - **优势**：下游系统可直接根据标识识别数据来源，灵活性高。
@@ -5335,7 +5335,7 @@ job-list
 
 ==**【详细设计过程】**==
 
-<img src=".pics/image-20250327105630356.png)**
+<img src="./pics/image-20250327105630356.png)**
 
 **检查YARN任务状态** 
 
@@ -5401,7 +5401,7 @@ hadoop distcp \
 
 5.定期删除hdfs上过期的文件，以保留固定数量的快照文件。
 
-![image-20250326233822972](.pics/image-20250326233822972.png)
+![image-20250326233822972](./pics/image-20250326233822972.png)
 
 **【原详细设计】**
 
@@ -5899,7 +5899,7 @@ if __name__ == '__main__':
 
 进入到工程里面，点击左上角按钮切换到”流式生产中心“，如果出现streamis的首页，则表示 DSS 已经成功集成了 Streamis。如下图：
 
-![image-20211230173839138](.pics/stream_product_center.png)
+![image-20211230173839138](./pics/stream_product_center.png)
 
 
 ### 3. 核心指标 
@@ -5908,7 +5908,7 @@ if __name__ == '__main__':
 
 核心指标显示当前用户可查看到的上传到该项目执行的Flink任务的状态汇总，状态暂时有9种，显示状态名称和处于该状态的任务数量，具体内容如下图。
 
-![核心指标](.pics/home_page.png)
+![核心指标](./pics/home_page.png)
 
 ### 4. 任务示例
 
@@ -5920,7 +5920,7 @@ if __name__ == '__main__':
 
 顶部Scriptis菜单创建一个脚本文件，脚本类型选择Flink,如下图所示：
 
-![进入FlinkSQL](.pics/enter_flinksql-2476903.png)
+![进入FlinkSQL](./pics/enter_flinksql-2476903.png)
 
 ![create_script_file.png](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/create_script_file-2476903.png)
 
@@ -5946,7 +5946,7 @@ meta.json是该任务的元数据信息，streamisjobtest为flinksql文件
 
 ![flinksql_job_use_demo](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/flinksql_job_use_demo-2476903.png)
 
-![flinksql_job_use_demo3](.pics/flinksql_job_use_demo3-2476903.png)
+![flinksql_job_use_demo3](./pics/flinksql_job_use_demo3-2476903.png)
 
 将SQL文件和meta.json文件打包成一个zip文件，注意：只能打包成zip文件，其他格式如rar、7z等格式无法识别
 
@@ -5956,7 +5956,7 @@ meta.json是该任务的元数据信息，streamisjobtest为flinksql文件
 
 本地开发Flink应用程序，并打包成jar包形式
 
-![flinkJar](.pics/flinkjar.png)
+![flinkJar](./pics/flinkjar.png)
 
 ##### 4.2.2.  文件打包层级
 
@@ -5972,7 +5972,7 @@ meta.json是该任务的元数据信息，resource.txt为flink应用使用到的
 
 ![flinkjar_zip](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/flinkjar_zip.png)
 
-![flinkjar_metajson](.pics/flinkjar_metajson.png)
+![flinkjar_metajson](./pics/flinkjar_metajson.png)
 
 #### 4.3. meta.json文件格式详解
 
@@ -6044,7 +6044,7 @@ meta.json是StreamisJob的元数据信息，其格式为：
     }
 ```
 
- ![default_config1](.pics/default_config1.png) 
+ ![default_config1](./pics/default_config1.png) 
 
  ![default_config2](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/default_config2.png) 
 
@@ -6057,21 +6057,21 @@ meta.json是StreamisJob的元数据信息，其格式为：
 发布模板：
  ![aomp_based_release](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/aomp_based_release.png)
 启动模板：
- ![aomp_based_start](.pics/aomp_based_start.png)
+ ![aomp_based_start](./pics/aomp_based_start.png)
 
 ##### 4.4.1. 上传工程资源文件
 
 进入到DSS页面，新建工程后，选择“流式生产中心”进入，点击“工程资源文件”
 
-![job_resource1](.pics/job_resource1.png)
+![job_resource1](./pics/job_resource1.png)
 
 点击“导入”进行资源包的导入，选择文件系统的资源包，并设置版本号
 
-![job_resource2](.pics/job_resource2.png)
+![job_resource2](./pics/job_resource2.png)
 
 导入完成
 
-![job_resource3](.pics/job_resource3.png)
+![job_resource3](./pics/job_resource3.png)
 
 ##### 4.4.2. 上传作业的zip包
 
@@ -6095,7 +6095,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 上传项目文件
 
-![project_source_file_import](.pics/project_source_file_import.png)
+![project_source_file_import](./pics/project_source_file_import.png)
 
 ### 6. Streamis作业介绍
 
@@ -6103,7 +6103,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 #### 6.1 运行情况
 
-![stream_job_detail](.pics/stream_job_detail.png)
+![stream_job_detail](./pics/stream_job_detail.png)
 
 #### 6.2 执行历史
 
@@ -6117,15 +6117,15 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 ![job_log1](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/job_log1.png)
 
-![job_log2](.pics/job_log2.png)
+![job_log2](./pics/job_log2.png)
 
 #### 6.3 配置
 
 给Streamis任务配置一些flink资源参数以及checkpoint的参数
 
-![image-20211231101503678](.pics/stream_job_config_1.png)
+![image-20211231101503678](./pics/stream_job_config_1.png)
 
-![image-20211231101503678](.pics/stream_job_config_2.png)
+![image-20211231101503678](./pics/stream_job_config_2.png)
 
 #### 6.4任务详情
 
@@ -6139,7 +6139,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 - **Flink SQL任务详情**
 
-![任务详情](.pics/stream_job_flinksql_jobcontent.png)
+![任务详情](./pics/stream_job_flinksql_jobcontent.png)
 
 &nbsp;&nbsp;Flink SQL任务详情展示了该任务的SQL语句。
 
@@ -6147,7 +6147,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 正在运行的Streamis任务可以通过该按钮进入到yarn管理界面上的查看flink任务运行情况。
 
-![image-20211231102020703](.pics/image-20211231102020703.png)
+![image-20211231102020703](./pics/image-20211231102020703.png)
 
 ### 7. Streamis作业生命周期管理
 
@@ -6157,11 +6157,11 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 ![job_start1](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/job_start1.png)
 
-![job_start2](.pics/job_start2.png)
+![job_start2](./pics/job_start2.png)
 
 作业启动会进行前置信息检查，会检查作业的版本信息和快照信息，当作业有检查信息需要用户确认时，则会弹出弹窗；对于批量重启的场景，可以勾选“确认所以批量作业”进行一次性确认
 
-![inspect1](.pics/inspect1.png)
+![inspect1](./pics/inspect1.png)
 
 #### 7.2. 作业停止
 
@@ -6175,9 +6175,9 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 点击作业左边的3个竖点中的“快照【savepoint】 ”可保存快照
 
-![savepoint1](.pics/savepoint1.png)
+![savepoint1](./pics/savepoint1.png)
 
-![savepoint2](.pics/savepoint2.png)
+![savepoint2](./pics/savepoint2.png)
 
 #### 7.4. 批量操作功能
 
@@ -6191,9 +6191,9 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 用户可以在页面对任务进行禁用启用：
 
-![enable_and_disable_01](.pics/enable_and_disable_01.png)
+![enable_and_disable_01](./pics/enable_and_disable_01.png)
 
-![enable_and_disable_02](.pics/enable_and_disable_02.png)
+![enable_and_disable_02](./pics/enable_and_disable_02.png)
 
 可以筛选已启用、已禁用和全部job：
 
@@ -6201,7 +6201,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 已禁用的job无法进行启动等操作：
 
-![enable_and_disable_04](.pics/enable_and_disable_04.png)
+![enable_and_disable_04](./pics/enable_and_disable_04.png)
 
 ### 8. Streamis版本新增特性
 
@@ -6236,7 +6236,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 **①首先在工程资源文件上传log4j.properties**
 
-![1.1](.pics/0.3.2.1.png)
+![1.1](./pics/0.3.2.1.png)
 
 **②在meta.json 配置文件中添加参数 "resources": [log4j.properties]**
 
@@ -6261,29 +6261,29 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 支持继续标签筛选任务
 
-![2.1](.pics/2.1.png)
+![2.1](./pics/2.1.png)
 
 #### 8.4. 标签批量修改
 
 先点批量修改，然后选中多个任务，点 修改标签。在弹出窗口输入新标签内容，支持大小写字母、数字、逗号、下划线。
 
 ![3.1](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/3.1.png)
-![3.2](.pics/3.2.png)
+![3.2](./pics/3.2.png)
 
 #### 8.5. 日志回调使用说明
 
-1、flink应用在启动会先向streamis发起注册，注册数据如下图所示 ![logs_call_back_01.png](.pics/logs_call_back_01.png)
+1、flink应用在启动会先向streamis发起注册，注册数据如下图所示 ![logs_call_back_01.png](./pics/logs_call_back_01.png)
 
 2、定时任务：flink应用使用 Java 中的定时任务工具来定期发送心跳消息。上图中的heartbeat_time为记录的心跳时间
 
-3、streamis新增定时任务检测应用，streamis告警信息如下图所示 ![logs_call_back_02.png](.pics/logs_call_back_02.png)
- ![logs_call_back_03.png](.pics/logs_call_back_03.png)
+3、streamis新增定时任务检测应用，streamis告警信息如下图所示 ![logs_call_back_02.png](./pics/logs_call_back_02.png)
+ ![logs_call_back_03.png](./pics/logs_call_back_03.png)
 
 ## Steamis产品截图
 
 **【生产中心】**
 
-![企业微信截图_17424614571701](.pics/企业微信截图_17424614571701.png)
+![企业微信截图_17424614571701](./pics/企业微信截图_17424614571701.png)
 
 **【运行情况】**
 
@@ -6297,23 +6297,23 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424601941298.png" alt="企业微信截图_17424601941298" style="zoom:67%;" />
 
-<img src=".pics/企业微信截图_17424604422726.png)
+<img src="./pics/企业微信截图_17424604422726.png)
 
-![企业微信截图_17424604676047](.pics/企业微信截图_17424604676047.png)
+![企业微信截图_17424604676047](./pics/企业微信截图_17424604676047.png)
 
 ![企业微信截图_17424604797635](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424604797635.png)
 
-![企业微信截图_17424605021312](.pics/企业微信截图_17424605021312.png)
+![企业微信截图_17424605021312](./pics/企业微信截图_17424605021312.png)
 
 **【任务详情】**
 
-![企业微信截图_17424606654455](.pics/企业微信截图_17424606654455.png)
+![企业微信截图_17424606654455](./pics/企业微信截图_17424606654455.png)
 
 ![企业微信截图_17424606762072](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424606762072.png)
 
 **【告警】**
 
-![企业微信截图_17424607188533](.pics/企业微信截图_17424607188533.png)
+![企业微信截图_17424607188533](./pics/企业微信截图_17424607188533.png)
 
 **【物料】**
 
@@ -6331,7 +6331,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 - 现有的BINLOG流式数据同步方案时效小时级，存在较多的可用性问题，另外每个新需求也需要较大版本人力开发，响应慢。每个规则一个应有，无法资源复用
 - 基于以上背景，希望实现一套低延时、可用性高、资源消耗低、人力成本低的配置化数据集成降本增效方案，降低数据同步需求需求的开发人力和资源小号。
 
-<img src=".pics/image-20250227154728743.png)` 注入到代码中，动态开启/关闭功能（如实验性特性）。
+<img src="./pics/image-20250227154728743.png)` 注入到代码中，动态开启/关闭功能（如实验性特性）。
 
 **8. 兼容性配置**
 
@@ -6414,7 +6414,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 <u>**2. 实例详情**</u>
 
-<img src=".pics/image-20250313144527764.png)      # 读取 PID 文件中的进程ID
+<img src="./pics/image-20250313144527764.png)      # 读取 PID 文件中的进程ID
     if kill -0 ${pid} >/dev/null 2>&1; then # 验证进程是否存活
       echo "Streamis Server is already running." # 若存活，提示服务已运行
       return 0; # 退出脚本
@@ -7001,7 +7001,7 @@ Flink应用失败重拉告警
 
 - 告警样例：
 
-![企业微信截图_17424574118687](.pics/企业微信截图_17424574118687.png)
+![企业微信截图_17424574118687](./pics/企业微信截图_17424574118687.png)
 
 - 告警描述：该告警表明因为一些外部因素导致了Flink流应用的失败，通常会附带自动重拉策略。
 - 处理SOP：
@@ -7015,11 +7015,11 @@ Flink应用失败重拉告警
 
 ![企业微信截图_17424576323859](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424576323859.png)
 
-![image-20250326202732913](.pics/image-20250326202732913.png)
+![image-20250326202732913](./pics/image-20250326202732913.png)
 
 ​	其中包括了stms.process.count进程数量检测，通过服务TCP端口${STMS-PORT}进行。 然后再进入生产环境managis(ops.bdp.webank.com)中，在监控管理台-监控模板上绑定监控模板和具体服务：
 
-![stms_monitor_ops[1]](.pics/stms_monitor_ops%5B1%5D.png)
+![stms_monitor_ops[1]](./pics/stms_monitor_ops%5B1%5D.png)
 
  	以上的进程存活性告警一旦产生，平台运维则应该参照服务进程启停指南对进程进行恢复。
 
@@ -7027,7 +7027,7 @@ Flink应用失败重拉告警
 
 ​	统一使用zabbix进行GC监控，zabbix管理地址为zabbix.bdp.webank.com，创建一个流式平台监控模板。
 
-![image-20250326202754383](.pics/image-20250326202754383.png)
+![image-20250326202754383](./pics/image-20250326202754383.png)
 
 ==**十分钟内full gc次数大于10次、old区占用大于99%**==
 
@@ -7037,7 +7037,7 @@ Flink应用失败重拉告警
   jmap -histo $pid
   ```
 
-![image-20250326202903106](.pics/image-20250326202903106.png)
+![image-20250326202903106](./pics/image-20250326202903106.png)
 
 - 查看服务进程的堆栈信息，判断线程有无block或者死锁:
 
@@ -7045,7 +7045,7 @@ Flink应用失败重拉告警
   jstack $pid
   ```
 
-![image-20250326203036607](.pics/image-20250326203036607.png)
+![image-20250326203036607](./pics/image-20250326203036607.png)
 
 - 查看垃圾回收相关信息：gc次数、gc时间等。
 
@@ -7061,27 +7061,27 @@ Flink应用失败重拉告警
 
 （1）点击job名，查看详情
 
-![image-20250326222428722](.pics/image-20250326222428722.png)
+![image-20250326222428722](./pics/image-20250326222428722.png)
 
 （2）点击执行历史页面，选择要查看的历史记录，点历史日志
 
-![img](.pics/wps107.jpg) 
+![img](./pics/wps107.jpg) 
 
 （3）默认客户端日志如下
 
-![img](.pics/wps108.jpg) 
+![img](./pics/wps108.jpg) 
 
 如果看不到客户端日志，如下图，可尝试复制引擎实例信息
 
-![img](.pics/wps109.jpg) 
+![img](./pics/wps109.jpg) 
 
 （4）在运行情况页面，复制客户端引擎实例 如 gz.bdz.bdplinkisrcs05.webank:36616
 
-![img](.pics/wps110.jpg) 
+![img](./pics/wps110.jpg) 
 
 （5）点击顶部管理，进入管理台--资源管理--历史引擎管理，输入复制的实例，点搜索
 
-![img](.pics/wps111.jpg) 
+![img](./pics/wps111.jpg) 
 
 （6）点查看日志，可查看客户端日志
 
@@ -7121,17 +7121,17 @@ b. 点击RUNNING、FINISHED
 
 RUNNING：在执行的时候可以看到作业，执行完之后只能在FINISHED里面看到。
 
-![img](.pics/wps115.jpg) 
+![img](./pics/wps115.jpg) 
 
 **查看YARN作业的日志**
 
 a. 当作业跑完之后，进入FINISHED，点击作业的History，跳转到historyserver 
 
-![img](.pics/wps116.jpg) 
+![img](./pics/wps116.jpg) 
 
  类似如下:
 
-![img](.pics/wps117.jpg) 
+![img](./pics/wps117.jpg) 
 
 **2）通过flink页面查看**
 
@@ -7143,7 +7143,7 @@ a. 当作业跑完之后，进入FINISHED，点击作业的History，跳转到hi
 
 点击application，输入applicationld，即可查询到对应appld。
 
-![img](.pics/wps122.jpg) 
+![img](./pics/wps122.jpg) 
 
 查询到之后，点击Application Master，即可进入flink页面。分别点击jobManager和TaskManager的loglist，可查看运行中日志
 
