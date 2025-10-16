@@ -426,7 +426,7 @@ JVM场景
    - 查找 `BLOCKED` 线程。
    - 检查死锁（`jstack` 会直接提示 `Found one Java-level deadlock`）。
 
-![image-20250424005128107](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424005128107.png?token=ARFL34CEIOJZY6Y62KJ345DI563LE)
+![image-20250424005128107](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424005128107.png)
 
 【**5. 数据库与外部依赖**】
 
@@ -450,13 +450,13 @@ JVM场景
 
 ## 如何防止url重复提交
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps1-4133580.jpg?token=ARFL34DBRYEPBQ2ACFPB2TTI563LG) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps1-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps2.jpg?token=ARFL34DUIPUAKKTLGYJHUBTI563LE) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps2.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps3-4133580.jpg?token=ARFL34DUIPUAKKTLGYJHUBTI563LE) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps3-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps4-4133580.jpg?token=ARFL34HIJJGYBFNI4KOW7BTI563LG) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps4-4133580.jpg) 
 
 ## 如何实现主线程等待子线程完成后执行
 
@@ -794,13 +794,13 @@ public class SharedResource {
 
 ## 如果有个java进程cpu占有率特别高，如何排查问题
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps5-4133580.jpg?token=ARFL34ACR5L56L7Q5FVGAITI563LK) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps5-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps6-4133580.jpg?token=ARFL34GXVDDBEB3763E73VTI563LK) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps6-4133580.jpg) 
 
 ## SQL查询慢如何解决
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps7-4133580.jpg?token=ARFL34EV3XAIJ2KSJ5ANIGTI563LI) 
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps7-4133580.jpg) 
 
 ## 大数据量下慢查询优化
 
@@ -870,17 +870,17 @@ public class SharedResource {
 
 **2.优化逻辑查询(sql优化)**
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps28-4133580.jpg?token=ARFL34EXLOICSUJXV77JDA3I563LM)
+![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps28-4133580.jpg)
 
 **3.优化物理查询**
 
 ​	物理查询优化是在确定了逻辑查询优化之后，采用**物理优化技术（比如索引等）**，通过计算代价模型对各种可能的访问路径进行估算，从而找到执行方式中代价最小的作为执行计划。在这个部分中，我们需要掌握的重点是对索引的创建和使用。
 
-![image-20250319140846737](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319140846737-4133580.png?token=ARFL34EZHE7PPOCXUNBIORDI563LO)
+![image-20250319140846737](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319140846737-4133580.png)
 
 **4.使用Redis或Memcached作为缓存**
 
-![image-20250319141009256](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319141009256-4133580.png?token=ARFL34E4ZZXPAA7FM6RHIZDI563LO)
+![image-20250319141009256](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319141009256-4133580.png)
 
 ![image-20250319141016229](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250319141016229-4133580.png)
 
@@ -890,7 +890,7 @@ public class SharedResource {
 
 ![image-20250319141125708](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250319141125708-4133580.png)
 
-![image-20250319141150939](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319141150939-4133580.png?token=ARFL34AU3CFZXM2QCAUPAS3I563LQ)
+![image-20250319141150939](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319141150939-4133580.png)
 
 
 
@@ -942,7 +942,7 @@ public class SharedResource {
 
   ![image-20220628212029574](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20220628212029574-5386793.png)
 
-  ![image-20250319001708346](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319001708346-5386793.png?token=ARFL34FG6ENGTENGCCJVVALI563LS)
+  ![image-20250319001708346](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319001708346-5386793.png)
 
   **type**
 
@@ -1126,7 +1126,7 @@ public class SharedResource {
 
 **前缀索引的工作原理**
 
-![image-20250424011630042](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424011630042.png?token=ARFL34AFEB3J52PL3M3HMF3I563LS)
+![image-20250424011630042](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424011630042.png)
 
 **前缀索引的缺点**
 
