@@ -426,7 +426,7 @@ JVM场景
    - 查找 `BLOCKED` 线程。
    - 检查死锁（`jstack` 会直接提示 `Found one Java-level deadlock`）。
 
-![image-20250424005128107](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424005128107.png)
+![image-20250424005128107](.pics/image-20250424005128107.png)
 
 【**5. 数据库与外部依赖**】
 
@@ -450,13 +450,13 @@ JVM场景
 
 ## 如何防止url重复提交
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps1-4133580.jpg) 
+![img](.pics/wps1-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps2.jpg) 
+![img](.pics/wps2.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps3-4133580.jpg) 
+![img](.pics/wps3-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps4-4133580.jpg) 
+![img](.pics/wps4-4133580.jpg) 
 
 ## 如何实现主线程等待子线程完成后执行
 
@@ -794,13 +794,13 @@ public class SharedResource {
 
 ## 如果有个java进程cpu占有率特别高，如何排查问题
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps5-4133580.jpg) 
+![img](.pics/wps5-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps6-4133580.jpg) 
+![img](.pics/wps6-4133580.jpg) 
 
 ## SQL查询慢如何解决
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps7-4133580.jpg) 
+![img](.pics/wps7-4133580.jpg) 
 
 ## 大数据量下慢查询优化
 
@@ -870,17 +870,17 @@ public class SharedResource {
 
 **2.优化逻辑查询(sql优化)**
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps28-4133580.jpg)
+![img](.pics/wps28-4133580.jpg)
 
 **3.优化物理查询**
 
 ​	物理查询优化是在确定了逻辑查询优化之后，采用**物理优化技术（比如索引等）**，通过计算代价模型对各种可能的访问路径进行估算，从而找到执行方式中代价最小的作为执行计划。在这个部分中，我们需要掌握的重点是对索引的创建和使用。
 
-![image-20250319140846737](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319140846737-4133580.png)
+![image-20250319140846737](.pics/image-20250319140846737-4133580.png)
 
 **4.使用Redis或Memcached作为缓存**
 
-![image-20250319141009256](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319141009256-4133580.png)
+![image-20250319141009256](.pics/image-20250319141009256-4133580.png)
 
 ![image-20250319141016229](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250319141016229-4133580.png)
 
@@ -890,7 +890,7 @@ public class SharedResource {
 
 ![image-20250319141125708](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250319141125708-4133580.png)
 
-![image-20250319141150939](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319141150939-4133580.png)
+![image-20250319141150939](.pics/image-20250319141150939-4133580.png)
 
 
 
@@ -942,7 +942,7 @@ public class SharedResource {
 
   ![image-20220628212029574](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20220628212029574-5386793.png)
 
-  ![image-20250319001708346](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250319001708346-5386793.png)
+  ![image-20250319001708346](.pics/image-20250319001708346-5386793.png)
 
   **type**
 
@@ -1126,7 +1126,7 @@ public class SharedResource {
 
 **前缀索引的工作原理**
 
-![image-20250424011630042](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424011630042.png)
+![image-20250424011630042](.pics/image-20250424011630042.png)
 
 **前缀索引的缺点**
 
@@ -1292,9 +1292,9 @@ class Person {
 
 **输入文件准备**：需要预先生成`large_data.txt`，每行一个整数（示例中未提供生成代码，可参考`InMemorySort`中的随机数生成逻辑）。
 
-![image-20250410004933662](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250410004933662.png?token=ARFL34DECLEFLAWNOYNBTLTI563LU)
+![image-20250410004933662](.pics/image-20250410004933662.png)
 
-![image-20250410005028940](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250410005028940.png?token=ARFL34A6UFFBAWKYF6B5L3DI563LU)
+![image-20250410005028940](.pics/image-20250410005028940.png)
 
 ![image-20250410005125989](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250410005125989.png)
 
@@ -1320,7 +1320,7 @@ class Person {
 
 我们可以先用前k个元素生成一个小顶堆，这个小顶堆用于存储当前k个元素，例子同上，可以构造小顶堆如下：
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps9-4554369.jpg?token=ARFL34FKR3S3KCZXY7KXPBTI563LW)
+![img](.pics/wps9-4554369.jpg)
 
 1. 初始化一个小顶堆，其堆顶元素最小。
 2. 先将数组的前 k 个元素依次入堆。
@@ -1466,7 +1466,7 @@ Queue<Integer> topKHeap(int[] nums, int k) {
    2. 如果堆的大小 ==100，将当前词的频率与**堆顶元素（堆中频率最小的词）**的频率比较。
    3. 如果当前词的频率 ＞堆顶词的频率，则移除堆顶元素，并将当前（词，频率）对插入堆中。 • 当遍历完所有500 个小文件的所有词频信息后，小顶堆中剩下的100个元素就是全局频率最高的 100个词。
 
-![image-20250424000428406](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424000428406.png?token=ARFL34EH2VU2LLXAYEPB2QDI563LY)
+![image-20250424000428406](.pics/image-20250424000428406.png)
 
 #### 解法 2：多路归并排序方法
 
@@ -1488,7 +1488,7 @@ Queue<Integer> topKHeap(int[] nums, int k) {
 2. 遍历整个文件，一个单词一个单词地从文件中读取出来，并且进行计数。
 3. 等到遍历的单词和上一个单词不同的话，那么上一个单词及其频率如果大于堆顶的词的频率，那么放在堆中。否则不放
 
-![image-20250424000810643](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250424000810643.png?token=ARFL34DMED52XUOAHB247ZLI563LW)
+![image-20250424000810643](.pics/image-20250424000810643.png)
 
 ### 最热门的10个查询串
 
@@ -1535,9 +1535,9 @@ Queue<Integer> topKHeap(int[] nums, int k) {
 
 ## 如何提高数据库并发能力(大量访问)
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps11-4133580.jpg?token=ARFL34DQCUVIIZMLYUNVFSDI563L2) 
+![img](.pics/wps11-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps12-4133580.jpg?token=ARFL34HQ5B7NT3DI5XEJSY3I563LY) 
+![img](.pics/wps12-4133580.jpg) 
 
 此外，一般应用对数据库而言都是“**读多写少**”，也就说对数据库读取数据的压力比较大，有一个思路就是采用数据库集群的方案，做主从架构、进行读写分离，这样同样可以提升数据库的并发处理能力。但并不是所有的应用都需要对数据库进行主从架构的设置，毕竟设置架构本身是有成本的。 
 
@@ -1741,9 +1741,9 @@ CREATE TABLE example (
 CREATE INDEX idx_d_e ON example (d, e);
 ```
 
-![image-20250430125202773](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250430125202773.png?token=ARFL34D6NOYULHQNPLNTCFTI563L2)
+![image-20250430125202773](.pics/image-20250430125202773.png)
 
-![image-20250430125213285](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250430125213285.png?token=ARFL34E53M7E4F3W3GPM7P3I563L2)
+![image-20250430125213285](.pics/image-20250430125213285.png)
 
 
 
@@ -1797,7 +1797,7 @@ CREATE INDEX idx_d_e ON example (d, e);
 
 - Kafka 0.8 以前，是没有 HA 机制的，就是任何一个 broker 宕机了，那个 broker 上的 partition 就废了，没法写也没法读，没有什么高可用性可言。比如说，我们假设创建了一个 topic，指定其 partition 数量是 3 个，分别在三台机器上。但是，如果第二台机器宕机了，会导致这个 topic 的 1/3 的数据就丢了，因此这个是做不到高可用的。
 
-  ![kafka-before](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/kafka-before.png?token=ARFL34CSWKIVUEJQBRRSDVTI563L4)
+  ![kafka-before](.pics/kafka-before.png)
 
 **Kafka 的高可用性的体现**
 
@@ -1830,7 +1830,7 @@ CREATE INDEX idx_d_e ON example (d, e);
 
 - 如果消费者干的事儿是拿一条数据就往数据库里写一条，会导致说，你可能就把数据 1/2 在数据库里插入了 2 次，那么数据就错啦。
 
-  ![mq-10](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/mq-10.png?token=ARFL34HRYGVYSIYF3D3J6Z3I563L4)
+  ![mq-10](.pics/mq-10.png)
 
 **（2）保证幂等性**
 
@@ -2066,7 +2066,7 @@ CREATE INDEX idx_d_e ON example (d, e);
 
   - 利用容器化技术实现快速发布和资源隔离
 
-    ![image-20250512115708357](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250512115708357.png?token=ARFL34B333RCVD33ZFGT63DI563L6)
+    ![image-20250512115708357](.pics/image-20250512115708357.png)
 
 - **数据层** 
 
@@ -2525,7 +2525,7 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 
 通过 `-XX:+HeapDumpOnOutOfMemoryError` 和 `-XX:HeapDumpPath` 参数定位堆栈文件（`.hprof`）的生成路径。
 
-![image-20250514144511130](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514144511130.png?token=ARFL34DPLU6AQ7JVSJU6UUTI563L6)
+![image-20250514144511130](.pics/image-20250514144511130.png)
 
 **<u>2）使用内存分析工具（visualvm、mat、jProfile 等）对堆快照文件进行分析。</u>**
 
@@ -2559,14 +2559,14 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 **（1）定位堆栈文件**
 
 - **JVM 参数配置** ：通过 `-XX:+HeapDumpOnOutOfMemoryError` 和 `-XX:HeapDumpPath` 参数定位堆栈文件（`.hprof`）的生成路径。
-  - 或者：![image-20250514151733172](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514151733172-7208511.png?token=ARFL34E2NSXFAYMH6H6MUHTI563MA)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](/Users/glexios/Library/Mobile%2520Documents/com~apple~CloudDocs/Notes/%25E9%259D%25A2%25E8%25AF%2595%25E8%25A1%25A5%25E5%2585%2585%25E7%25AC%2594%25E8%25AE%25B0.assets/image-20250514151755128.png)
-  - ![image-20250514151810247](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514151810247-7208511.png?token=ARFL34A7WVYPYGUNCPIJHULI563ME)
+  - 或者：![image-20250514151733172](.pics/image-20250514151733172-7208511.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](/Users/glexios/Library/Mobile%2520Documents/com~apple~CloudDocs/Notes/%25E9%259D%25A2%25E8%25AF%2595%25E8%25A1%25A5%25E5%2585%2585%25E7%25AC%2594%25E8%25AE%25B0.assets/image-20250514151755128.png)
+  - ![image-20250514151810247](.pics/image-20250514151810247-7208511.png)
 
 - **容器环境限制** ：因测试环境部署在容器中，需通过 **容器 → 跳板机 → SFTP 服务器 → 本地开发机** 的链路下载堆栈文件
 
 **（2）堆栈文件分析**
 
-![image-20250514151936510](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514151936510-7208511.png?token=ARFL34AUHVICP57D2QQJYYTI563MC)
+![image-20250514151936510](.pics/image-20250514151936510-7208511.png)
 
 ​	通过 jvisualvm.exe 应用 文件 -> 装入 的方式导入刚才下载的文件，载入之后会有这样的选项卡
 
@@ -2580,17 +2580,17 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 
 - 我们这里由于 char 类实例数比较高，所有我优先往内存泄漏方向思考。
 
-![image-20250514152522535](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514152522535-7208511.png?token=ARFL34ATLDG2GGELU7TSGWLI563ME)
+![image-20250514152522535](.pics/image-20250514152522535-7208511.png)
 
 **【实例数分析】**
 
-![image-20250514152658794](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514152658794-7208511.png?token=ARFL34HUC2F4OY6B5YBI56TI563ME)
+![image-20250514152658794](.pics/image-20250514152658794-7208511.png)
 
 发现全是这种字符的实例，选中【实例】，右键可以分析【最近的垃圾回收节点】
 
 这里会显示这些对象为何没有被回收，一般是静态变量或者是全局对象引用导致。
 
-![image-20250514153311959](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514153311959-7208511.png?token=ARFL34GRXI2FUTCJIFPSPTLI563MG)
+![image-20250514153311959](.pics/image-20250514153311959-7208511.png)
 
 通过上面图片可以看出，图中主要是由静态字段导致
 
@@ -2608,7 +2608,7 @@ jmap -dump:live,format=b,file=<输出路径> <进程ID>
 
 但是调用 clear()的地方只有3处。正常来说凡是使用 ThreadLocal 的地方，set 和 clear() 都应该成对出现。
 
-![image-20250514153516478](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514153516478-7208511.png?token=ARFL34HDNQBLJM2NOG5YRJ3I563MI)
+![image-20250514153516478](.pics/image-20250514153516478-7208511.png)
 
 **<u>（4）原因分析</u>**
 
@@ -2969,7 +2969,7 @@ jstack <PID> > /tmp/thread_dump.log
   - 分片处理大对象（如拆分集合）。
   - 调整 GC 参数（如 G1 的 `-XX:MaxGCPauseMillis`）。
 
-![image-20250514150555467](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514150555467.png?token=ARFL34CAXA55GXJGDM47DOTI563MK)
+![image-20250514150555467](.pics/image-20250514150555467.png)
 
 
 
@@ -2984,38 +2984,7 @@ jstack <PID> > /tmp/thread_dump.log
 
 【**一般来说，服务器故障诊断的整体思路如下**】
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/20200309181645.png?token=ARFL34GZGC7TNRPKYXOH5W3I563MK" alt="img" style="zoom: 50%;" /><img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/20200309181831.png" alt="img" style="zoom: 67%;" />
-
-### CPU问题
-
-- **CPU 使用率过高**：往往是由于程序逻辑问题导致的。常见导致 CPU 飙升的问题场景如：死循环，无限递归、频繁 GC、线程上下文切换过多。
-- **CPU 始终升不上去**：往往是由于程序中存在大量 IO 操作并且时间很长（数据库读写、日志等）。
-
-#### 查找 CPU 占用率较高的进程、线程
-
-线上环境的 Java 应用可能有多个进程、线程，所以，要先找到 CPU 占用率较高的进程、线程。
-
-（1）使用 `ps` 命令查看 xxx 应用的进程 ID（PID）
-
-- 也可以使用 `jps` 命令来查看。
-
-```shell
-ps -ef | grep xxx
-```
-
-（2）如果应用有多个进程，可以用 `top` 命令查看哪个占用 CPU 较高。
-
-（3）用 `top -Hp pid` 来找到 CPU 使用率比较高的一些线程。
-
-（4）将占用 CPU 最高的 PID 转换为 16 进制，使用 `printf '%x\n' pid` 得到 `nid`
-
-- **<font color = '#8D0101'>PID是进程的唯一标识，而NID是线程在操作系统中的唯一标识</font>**
-
-（5）**使用 `jstack <pid> | grep '<nid>' -C5` 命令**，查看线程堆栈信息：
-
-```bash
-$ jstack 7129 | grep '0x1c23' -C5
-        at java.lang.Object.wait(Object.java:502)
+<img src=".pics/20200309181645.png)
         at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
         - locked <0x00000000b5383ff0> (a java.lang.ref.Reference$Lock)
         at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
@@ -3160,7 +3129,7 @@ ss -tanp | grep -E 'TIME-WAIT|CLOSE-WAIT'
 | **TIME_WAIT**  | 主动关闭方 | 正常关闭流程的中间状态         | 端口耗尽（短连接场景） |
 | **CLOSE_WAIT** | 被动关闭方 | 未正确关闭连接（代码逻辑问题） | 连接泄漏、资源耗尽     |
 
-![image-20250411234839988](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250411234839988.png?token=ARFL34DWD5LWSCA3MFPJNLDI563MO)
+![image-20250411234839988](.pics/image-20250411234839988.png)
 
 ![image-20250411234853716](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250411234853716.png)
 
@@ -3168,7 +3137,7 @@ ss -tanp | grep -E 'TIME-WAIT|CLOSE-WAIT'
 
 用 ss 命令会更快`ss -ant | awk '{++S[$1]} END {for(a in S) print a, S[a]}'`
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/2019-11-04-083830.png?token=ARFL34BQIYXEGYKIINYFDLTI563MO)
+![img](.pics/2019-11-04-083830.png)
 
 ##### TIME_WAIT
 
@@ -3228,7 +3197,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 每增加一个产品就要增加一个具体产品类和一个对应的具体工厂类，这增加了系统的复杂度
 
-![image-20250413110811534](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413110811534.png?token=ARFL34DFW2MBC6Y2WV2IK73I56266)
+![image-20250413110811534](.pics/image-20250413110811534.png)
 
 ![image-20250413110825654](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413110825654.png)
 
@@ -3247,17 +3216,17 @@ net.ipv4.tcp_tw_recycle = 1
 - **抽象产品（Product）**：定义了产品的规范，描述了产品的主要特性和功能，抽象工厂模式有多个抽象产品。
 - **具体产品（ConcreteProduct）**：实现了抽象产品角色所定义的接口，由具体工厂来创建，它 同具体工厂之间是多对一的关系。
 
-![image-20250413121158977](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413121158977.png?token=ARFL34ABPWEC6T3VWW4CMCTI56266)
+![image-20250413121158977](.pics/image-20250413121158977.png)
 
-![image-20250413121219845](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413121219845.png?token=ARFL34GM4NFBDBHUU2CH7NLI56264)
+![image-20250413121219845](.pics/image-20250413121219845.png)
 
-![image-20250413121235402](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413121235402.png?token=ARFL34AKTPEQJTLZRYZJ76TI56264)
+![image-20250413121235402](.pics/image-20250413121235402.png)
 
 ![image-20250413121319600](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413121319600.png)
 
 ### 手写单例（singleton）设计模式
 
-![image-20250409002955025](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409002955025-4541422.png?token=ARFL34F3KXOZNISJJMYQEALI5627C)
+![image-20250409002955025](.pics/image-20250409002955025-4541422.png)
 
 **单例模式的优点：**
 
@@ -3267,7 +3236,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 **懒汉式**：好处:延迟对象的创建;坏处:目前的写法，会线程不安全。---》到多线程内容时，再修改
 
-![image-20250409002716615](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409002716615-4541422.png?token=ARFL34C53Q3KGKMVE6MZLCTI5627E)
+![image-20250409002716615](.pics/image-20250409002716615-4541422.png)
 
 #### 饿汉式
 
@@ -3283,7 +3252,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 #### 单例模式之懒汉式（双重校验锁）
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps16-4541422.jpg?token=ARFL34D425P6O6QN6CYSZHLI5627E) 
+![img](.pics/wps16-4541422.jpg) 
 
 假设有两个线程a和b调用getInstance()方法，假设a先走，一路走到4这一步，执行instance = new Singleton()这句代码
 
@@ -3299,7 +3268,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 ![img](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/wps17-4133580-4541422.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps18-4133580-4541422.jpg?token=ARFL34AWJX3YY5CF6SLYXD3I5627G) 
+![img](.pics/wps18-4133580-4541422.jpg) 
 
 源码中我们可以看见这么一句话，如果你的这个类型是枚举类型，想要通过反射去创建对象时会抛出一个异常（不能通过反射创建枚举对象）
 
@@ -3344,7 +3313,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 - 测试类直接访问的是ProxyPoint类对象，也就是说ProxyPoint作为访问对象和目标对象的中介。同时也对sell方法进行了增强（代理点收取一些服务费用）。
 
-![image-20250413162618013](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413162618013.png?token=ARFL34AEAVKG7KZ6YZ7XMPTI5627I)
+![image-20250413162618013](.pics/image-20250413162618013.png)
 
 #### JDK动态代理
 
@@ -3361,7 +3330,7 @@ net.ipv4.tcp_tw_recycle = 1
 
 ![image-20250413170951871](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413170951871.png)
 
-![image-20250413170929023](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413170929023.png?token=ARFL34GAEY5VVORHBTBGDMLI5627I)
+![image-20250413170929023](.pics/image-20250413170929023.png)
 
 ![image-20250413171006093](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413171006093.png)
 
@@ -3381,9 +3350,9 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 </dependency>
 ```
 
-![image-20250413174723864](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413174723864.png?token=ARFL34EB64DDZXSBRVY5OB3I5627K)
+![image-20250413174723864](.pics/image-20250413174723864.png)
 
-![image-20250413174734589](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413174734589.png?token=ARFL34FJ6TMOTE6ZYM3JNW3I5627M)
+![image-20250413174734589](.pics/image-20250413174734589.png)
 
 #### jdk代理和CGLIB代理
 
@@ -3418,11 +3387,11 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 
 **eg：现有一台电脑只能读取SD卡，而要读取TF卡中的内容的话就需要使用到适配器模式。创建一个读卡器，将TF卡中的内容读取出来。**
 
-![image-20250413175617523](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413175617523.png?token=ARFL34CYA5FCH3W5HSTZVHLI5627K)
+![image-20250413175617523](.pics/image-20250413175617523.png)
 
-![image-20250413175635827](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413175635827.png?token=ARFL34G4ITOVHDFZ76T4ZK3I5627M)
+![image-20250413175635827](.pics/image-20250413175635827.png)
 
-![image-20250413175657625](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413175657625.png?token=ARFL34BAXJATTJWH4PSEF63I5627M)
+![image-20250413175657625](.pics/image-20250413175657625.png)
 
 ![image-20250413175710818](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413175710818.png)
 
@@ -3455,11 +3424,11 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 - **动态责任传递** ：通过 `setNextHandler` 构建处理链，符合开闭原则
 - 每个处理者通过 `canHandle()` 决策是否继续传递请求（通过随机数模拟不同角色的处理成功率，体现能力差异）
 
-![image-20250411225326371](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250411225326371-4541422.png?token=ARFL34BQSY2Q2TTBUZLX3V3I5627O)
+![image-20250411225326371](.pics/image-20250411225326371-4541422.png)
 
-![image-20250411225341196](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250411225341196-4541422.png?token=ARFL34HHNVK6KLPA4NQUYQDI5627Q)
+![image-20250411225341196](.pics/image-20250411225341196-4541422.png)
 
-![image-20250411225459145](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250411225459145-4541422.png?token=ARFL34CPCRIICOZTHIKV6XTI5627Q)
+![image-20250411225459145](.pics/image-20250411225459145-4541422.png)
 
 ### 模板方法模式
 
@@ -3494,40 +3463,7 @@ CGLIB是第三方提供的包，所以需要引入jar包的坐标：
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250413181741405.png" alt="image-20250413181741405" style="zoom:40%;" />
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250413181812398.png?token=ARFL34DK4HXNEAJ3CST3K4DI5627S" alt="image-20250413181812398" style="zoom:40%;" />
-
-### 观察者模式（发布-订阅（Publish/Subscribe）模式）
-
-它定义了一种一对多的依赖关系，让**多个观察者对象同时监听某一个主题对象**。这个主题对象在状态变化时，会通知所有的观察者对象，使他们能够自动更新自己。
-
-**【在观察者模式中有如下角色】**
-
-- **Subject**：抽象主题（抽象被观察者），抽象主题角色把所有观察者对象保存在一个集合里，每个主题都可以有任意数量的观察者，抽象主题提供一个接口，可以增加和删除观察者对象。
-- **ConcreteSubject：**具体主题（具体被观察者），该角色将有关状态存入具体观察者对象，在具体主题的内部状态发生改变时，给所有注册过的观察者发送通知。
-- **Observer：**抽象观察者，是观察者的抽象类，它定义了一个更新接口，使得在得到主题更改通知时更新自己。
-- **ConcrereObserver：**具体观察者，实现抽象观察者定义的更新接口，以便在得到主题更改通知时更新自身的状态。
-
-**【优点】**
-
-- 降低了目标与观察者之间的耦合关系，两者之间是抽象耦合关系。
-- 被观察者发送通知，所有注册的观察者都会收到信息【可以实现广播机制】
-
-**【缺点】**
-
-- 如果观察者非常多的话，那么所有的观察者收到被观察者发送的通知会耗时
-- 如果被观察者有循环依赖的话，那么被观察者发送通知会使观察者循环调用，会导致系统崩溃
-
-【**观察者模式应用场景**】
-
-- 对象间存在一对多关系，一个对象的状态发生改变会影响其他对象。
-- 当一个抽象模型有两个方面，其中一个方面依赖于另一方面时。
-
-**eg：在使用微信公众号时，大家都会有这样的体验，当你关注的公众号中有新内容更新的话，它就会推送给关注公众号的微信用户端。我们使用观察者模式来模拟这样的场景，微信用户就是观察者，微信公众号是被观察者，有多个的微信用户关注了Java潘大师这个公众号。**
-
-```java
-//1.定义抽象观察者类，里面定义一个更新的方法
-public interface Observer {
-    void update(String message);
+<img src=".pics/image-20250413181812398.png);
 }
 //2.定义具体观察者类，微信用户是观察者，里面实现了更新的方法
 public class WeixinUser implements Observer {
@@ -3746,7 +3682,7 @@ public class demo {
 
 在多线程开发当中，如果生产者处理速度很快，而消费者处理速度很慢，那么生产者就必须等待消费者处理完，才能继续生产数据。同样的道理，如果消费者的处理能力大于生产者，那么消费者就必须等待生产者。
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps13.png?token=ARFL34FWKT3Z6LMTOYQLHFLI562HK) 
+![img](.pics/wps13.png) 
 
 当缓冲区满的时候，生产者停止执行，让其他线程进行
 
@@ -3758,7 +3694,7 @@ public class demo {
 
 **等待通知机制wait/notify/notifyAll**
 
-![image-20250310233338783](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250310233338783-4133580.png?token=ARFL34F5EVRJJGGGSOMZWMDI562HK)
+![image-20250310233338783](.pics/image-20250310233338783-4133580.png)
 
 - `wait` - `wait` 会自动**释放当前线程占有的对象锁**，并请求操作系统挂起当前线程，**让线程从 `Running` 状态转入 `Waiting` 状态**，等待 `notify` / `notifyAll` 来唤醒。如果没有释放锁，那么其它线程就无法进入对象的同步方法或者同步控制块中，那么就无法执行 `notify` 或者 `notifyAll` 来唤醒挂起的线程，造成死锁。
 - `notify` - 唤醒一个正在 `Waiting` 状态的线程，并让它拿到对象锁，具体唤醒哪一个线程由 JVM 控制 
@@ -3787,9 +3723,9 @@ public class demo {
 
 - 如果调用某个对象的 `wait` 方法，当前线程必须拥有这个对象的对象锁，因此调用 `wait` 方法必须在 `synchronized` 方法和 `synchronized` 代码块中，如果没有获取到锁前调用wait()方法，会抛出java.lang.IllegalMonitorStateException异常。
 
-![image-20250409013043263](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409013043263.png?token=ARFL34FIFAQDUSTAKK7FLSDI562HI)
+![image-20250409013043263](.pics/image-20250409013043263.png)
 
-![image-20250409013058767](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409013058767.png?token=ARFL34BM4T5QHZFFM4LQFP3I562HK)
+![image-20250409013058767](.pics/image-20250409013058767.png)
 
 ![image-20250409013131548](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250409013131548.png)
 
@@ -3872,7 +3808,7 @@ public class demo {
 
 ## 手写单例（singleton）设计模式
 
-![image-20250409002955025](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409002955025.png?token=ARFL34D547RFRN5ZB5ADE2TI562HM)
+![image-20250409002955025](.pics/image-20250409002955025.png)
 
 **单例模式的优点：**
 
@@ -3888,23 +3824,23 @@ public class demo {
 
 坏处:对象加载时间过长;好处:饿汉式是线程安全的。
 
-![image-20250409002741419](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409002741419.png?token=ARFL34BPBCI7L4O62QZD7CLI562HO)
+![image-20250409002741419](.pics/image-20250409002741419.png)
 
 ### 懒汉式
 
 好处:延迟对象的创建;坏处:目前的写法，会线程不安全。---》到多线程内容时，再修改
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps15-4133580.jpg?token=ARFL34GJAUTA2U5PQ5PKV7TI562HO)
+![img](.pics/wps15-4133580.jpg)
 
 ### 单例模式之懒汉式（双重校验锁）
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps16.jpg?token=ARFL34HW3IMG3VB323XIOT3I562HO) 
+![img](.pics/wps16.jpg) 
 
 假设有两个线程a和b调用getInstance()方法，假设a先走，一路走到4这一步，执行instance = new Singleton()这句代码
 
 这里如果变量声明不使用volatile关键字，是可能会发生错误的。它可能会被重排序：
 
-![image-20251015225606695](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20251015225606695.png?token=ARFL34ADTA47ISCOBETVSJLI563EI)
+![image-20251015225606695](.pics/image-20251015225606695.png)
 
 ​	此时，线程b刚刚进来执行到1（看上面的代码块），就有可能会看到instance不为null，然后线程b也就不会等待监视器锁，而是直接返回instance。问题是这个instance可能还没执行完构造方法（线程a此时还在4这一步），所以**线程b拿到的instance是不完整的**，**它里面的属性值可能是初始化的零值(0/false/null)，而不是线程a在构造方法中指定的值**。
 
@@ -3914,7 +3850,7 @@ public class demo {
 
 ![img](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/wps17-4133580.jpg) 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps18-4133580.jpg?token=ARFL34CLGE4CBGALNVYHAYLI562HS) 
+![img](.pics/wps18-4133580.jpg) 
 
 源码中我们可以看见这么一句话，如果你的这个类型是枚举类型，想要通过反射去创建对象时会抛出一个异常（不能通过反射创建枚举对象）
 
@@ -3932,9 +3868,9 @@ public class demo {
 
 - **`Object.wait()` 方法可能因系统中断或其他原因提前返回（虚假唤醒），此时线程需要重新检查条件是否满足。**
 
-![image-20250409003447207](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409003447207.png?token=ARFL34DDM43AXMYK6SRNJFTI562HS)
+![image-20250409003447207](.pics/image-20250409003447207.png)
 
-![image-20250409003515747](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409003515747.png?token=ARFL34BFOQKVG2HECUY2EEDI562HU)
+![image-20250409003515747](.pics/image-20250409003515747.png)
 
 ![image-20250409003519564](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250409003519564.png)
 
@@ -3946,7 +3882,7 @@ public class demo {
 
 **`private static volatile Object lock = new Object();`**
 
-![image-20251015225639301](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20251015225639301.png?token=ARFL34C6FLF672XVP42OSYDI563GK)
+![image-20251015225639301](.pics/image-20251015225639301.png)
 
 ![image-20250409003948350](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/场景题+项目排查问题+设计模式+手写代码+Streamis.assets/image-20250409003948350.png)
 
@@ -3956,7 +3892,7 @@ public class demo {
 
 - 跟两个线程交替打印奇数和偶数的对象监视器一样实现
 
-![image-20250409004226701](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409004226701.png?token=ARFL34DL2GLEUCEDCORZGHTI562HY)
+![image-20250409004226701](.pics/image-20250409004226701.png)
 
 ![image-20250409004230498](file:///Users/glexios/Library/Mobile%20Documents/com~apple~CloudDocs/Notes/%E5%9C%BA%E6%99%AF%E9%A2%98+%E9%A1%B9%E7%9B%AE%E6%8E%92%E6%9F%A5%E9%97%AE%E9%A2%98+%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F+%E6%89%8B%E5%86%99%E4%BB%A3%E7%A0%81+Streamis.assets/image-20250409004230498.png?lastModify=1760538619)
 
@@ -3966,11 +3902,11 @@ public class demo {
 
 ​	用等待唤醒机制，当一个线程执行完当前任务后再唤醒其他线程来执行任务，自己去休眠，避免在线程执行任务的时候其他线程处于忙等状态，浪费cpu资源。
 
-![image-20250409012732358](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409012732358.png?token=ARFL34BDGFNULOVQ6JYHZK3I562H2)
+![image-20250409012732358](.pics/image-20250409012732358.png)
 
-![image-20250409012740339](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409012740339.png?token=ARFL34BXRQ6UP4SKYDOZ43LI562H4)
+![image-20250409012740339](.pics/image-20250409012740339.png)
 
-![image-20250409012745730](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409012745730.png?token=ARFL34CUJD33THZZES4LGFTI562HY)
+![image-20250409012745730](.pics/image-20250409012745730.png)
 
 
 
@@ -4084,7 +4020,7 @@ Streamis集群服务都会设置有告警，统一使用zabbix进行告警，主
 
   - 查看服务进程的堆栈信息，判断线程有无block或者死锁:`jstack $pid`
 
-    <img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250414095454090.png" alt="image-20250414095454090" style="zoom:40%;" />
+    <img src=".pics/image-20250414095454090.png" alt="image-20250414095454090" style="zoom:40%;" />
 
   - 查看垃圾回收相关信息：gc次数、gc时间等。`jstat -gcutil $pid`
 
@@ -4269,7 +4205,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 ​	在近期测试环境中，应用进程频繁被 `OutOfMemoryError`（OOM）异常触发的 JVM 机制强制终止，而生产环境从未发生类似问题。
 
-![image-20250514151546545](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514151546545.png)
+![image-20250514151546545](.pics/image-20250514151546545.png)
 
 初步怀疑可能由以下原因导致：
 
@@ -4282,8 +4218,8 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 **（1）定位堆栈文件**
 
 - **JVM 参数配置** ：通过 `-XX:+HeapDumpOnOutOfMemoryError` 和 `-XX:HeapDumpPath` 参数定位堆栈文件（`.hprof`）的生成路径。
-  - 或者：![image-20250514151733172](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试补充笔记.assets/image-20250514151733172.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514151755128.png)
-  - ![image-20250514151810247](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514151810247.png)
+  - 或者：![image-20250514151733172](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试补充笔记.assets/image-20250514151733172.png)，定位到了虚拟机的日志的输出目录，用简单的命令寻找到堆栈文件：![image-20250514151755128](.pics/image-20250514151755128.png)
+  - ![image-20250514151810247](.pics/image-20250514151810247.png)
 
 - **容器环境限制** ：因测试环境部署在容器中，需通过 **容器 → 跳板机 → SFTP 服务器 → 本地开发机** 的链路下载堆栈文件
 
@@ -4295,7 +4231,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 - 在概要的地方就给出了出问题的关键线程：发现 OOM 原因为 **堆内存溢出（Java heap space）** ，将堆栈信息点进去，发现堆栈是由于字符串的复制操作导致发生了 oom。
 - 同时通过堆栈信息可以定位到 UnitTestContextHolder.java 类
-- ![image-20250514152614559](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514152614559.png)
+- ![image-20250514152614559](.pics/image-20250514152614559.png)
 
 **【类分析】**
 
@@ -4307,13 +4243,13 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 **【实例数分析】**
 
-![image-20250514152658794](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514152658794.png)
+![image-20250514152658794](.pics/image-20250514152658794.png)
 
 发现全是这种字符的实例，选中【实例】，右键可以分析【最近的垃圾回收节点】
 
 这里会显示这些对象为何没有被回收，一般是静态变量或者是全局对象引用导致。
 
-![image-20250514153311959](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514153311959.png)
+![image-20250514153311959](.pics/image-20250514153311959.png)
 
 通过上面图片可以看出，图中主要是由静态字段导致
 
@@ -4323,7 +4259,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 ![image-20250514153410531](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250514153410531.png)
 
-![image-20250514153435758](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514153435758.png)
+![image-20250514153435758](.pics/image-20250514153435758.png)
 
 这里使用到了 ThreadLocal 做一些对象的存储，但是我发现 调用 setAttribute(String key,Object value)的地方有 33 处
 
@@ -4331,7 +4267,7 @@ Flink 提供了丰富的内置指标，可以通过以下方式获取：
 
 但是调用 clear()的地方只有3处。正常来说凡是使用 ThreadLocal 的地方，set 和 clear() 都应该成对出现。
 
-![image-20250514153516478](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250514153516478.png)
+![image-20250514153516478](.pics/image-20250514153516478.png)
 
 **<u>（4）原因分析</u>**
 
@@ -4449,7 +4385,7 @@ echo ${FLINK_HOME
 
 `Linkis` 的 `Flink` 引擎是通过 `flink on yarn` 的方式进行启动的,所以需要指定用户使用的队列，如下图所示
 
-![yarn](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/yarn-conf-395feb3695fdbf71df62544d5df21ad3.png)
+![yarn](.pics/yarn-conf-395feb3695fdbf71df62544d5df21ad3.png)
 
 #### 通过 `Linkis-cli` 提交任务（Shell方式）
 
@@ -4618,17 +4554,17 @@ linkis 提供的客户端认证方式都支持Token策略模式`new TokenAuthent
 
 ![image-20250409163643310](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250409163643310.png)
 
-![image-20250409163819159](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409163819159.png)
+![image-20250409163819159](.pics/image-20250409163819159.png)
 
-![image-20250409163900622](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409163900622.png)
+![image-20250409163900622](.pics/image-20250409163900622.png)
 
-![image-20250409163918570](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409163918570.png)
+![image-20250409163918570](.pics/image-20250409163918570.png)
 
 
 
 ## Steamis已有能力现状
 
-![image-20250409164209968](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250409164209968.png)
+![image-20250409164209968](.pics/image-20250409164209968.png)
 
 ## Streamis简介
 
@@ -4650,7 +4586,7 @@ linkis 提供的客户端认证方式都支持Token策略模式`new TokenAuthent
 
 **【依赖的生态组件】**
 
-![企业微信截图_17424615822243](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424615822243.png)
+![企业微信截图_17424615822243](.pics/企业微信截图_17424615822243.png)
 
 **【Streamis功能介绍】**
 
@@ -4673,7 +4609,7 @@ linkis 提供的客户端认证方式都支持Token策略模式`new TokenAuthent
 - 用户通过标准模板填入必需的参数，而不需要的参数就可以直接删去，因此可以在保证规范的同时拥有一定的定制自由，能够大大降低开发的成本。
 - 用户通过把meta.json和相关资源文件打入一个zip包上传至Streamis的服务器，Streamis就可以自动将相关信息拆解后形成一个job，相关资源文件则通过对接linkis到bml物料管理系统（实际使用HDFS文件进行数据存储）进行持久化。
 
-![flinkjar_metajson](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/flinkjar_metajson.png)
+![flinkjar_metajson](.pics/flinkjar_metajson.png)
 
 meta.json是StreamisJob的元数据信息，其格式为：
 
@@ -4743,9 +4679,9 @@ meta.json是StreamisJob的元数据信息，其格式为：
   - 项目工程级别的物料则可以通过工程物料导入接口进行上传，整个项目的job作业都能共享这个物料
   - 加载物料的顺序为：先加载job级别的物料，若没有则加载项目工程级别的物料
 
-![企业微信截图_17425468956360](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17425468956360.png)
+![企业微信截图_17425468956360](.pics/企业微信截图_17425468956360.png)
 
-![企业微信截图_17424613143934](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424613143934.png)
+![企业微信截图_17424613143934](.pics/企业微信截图_17424613143934.png)
 
 **【维护一个flink应用的完整生命周期】**
 
@@ -4759,7 +4695,7 @@ meta.json是StreamisJob的元数据信息，其格式为：
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250321163422704.png" alt="image-20250321163422704" style="zoom:100%;" />
 
-![企业微信截图_17424614571701](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17424614571701.png)
+![企业微信截图_17424614571701](.pics/%E4%BC%81%E4%B8%9A%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_17424614571701.png)
 
 **【对flink作业的配置】**
 
@@ -4848,7 +4784,7 @@ meta.json是StreamisJob的元数据信息，其格式为：
 
 ecm资源也跟ec差不多，可以从linkis管理台进行管理，决定起多少ecm
 
-![image-20250410001904370](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250410001904370-4602709.png)
+![image-20250410001904370](.pics/image-20250410001904370-4602709.png)
 
 
 
@@ -4874,7 +4810,7 @@ ecm资源也跟ec差不多，可以从linkis管理台进行管理，决定起多
 
 #### flink分离式引擎设计细节
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250324174150782.png" alt="image-20250324174150782" style="zoom:30%;" />
+<img src=".pics/image-20250324174150782.png" alt="image-20250324174150782" style="zoom:30%;" />
 
 **【整体流程】**
 
@@ -4884,7 +4820,7 @@ ecm资源也跟ec差不多，可以从linkis管理台进行管理，决定起多
 
 - **创建Flink Manager引擎、查询status和save详细过程**
 
-![image-20250324175646677](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250324175646677.png)
+![image-20250324175646677](.pics/image-20250324175646677.png)
 
 ​	status、kill操作均为通用操作，可以走ECM。save、doCheckPoint为flink专有操作，需要走flink管理引擎。
 
@@ -5061,7 +4997,7 @@ def init(): Unit
 
 **<u>1）【使用 Utils.defaultScheduler.scheduleAtFixedRate 实现周期性任务监控】</u>**
 
-![image-20250321222103386](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250321222103386.png)
+![image-20250321222103386](.pics/image-20250321222103386.png)
 
 **`Utils.defaultScheduler.scheduleAtFixedRate`：**创建一个固定频率的定时任务。
 
@@ -5100,7 +5036,7 @@ def init(): Unit
 
 <u>**2）【在服务启动时清理未完成的任务（处于STARTING状态）】**</u>
 
-![image-20250321222808369](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250321222808369.png)
+![image-20250321222808369](.pics/image-20250321222808369.png)
 
 通过**`wds.streamis.job.reset_on_restart.enable`配置**是否在服务启动时清理未完成的任务
 
@@ -5179,7 +5115,7 @@ def doMonitor(): Unit
 
 ##### 重启任务
 
-![image-20250321235316245](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250321235316245.png)
+![image-20250321235316245](.pics/image-20250321235316245.png)
 
 - 调用 restartJob 方法，尝试重新启动任务。
 - 检查自动恢复开关配置**fail_restart_switch**，发现为 "ON"。
@@ -5203,9 +5139,9 @@ def doMonitor(): Unit
 - **多集群高可用发布**：就是将物料包推送到streamis服务上，包括单活、双活、双活灾等高可用策略
 - **多集群一致性启动**：检查集群物料的一致性，根据高可用策略启动不同集群上的作业
 
-![image-20250323223747645](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250323223747645.png)
+![image-20250323223747645](.pics/image-20250323223747645.png)
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250323223709881.png" alt="image-20250323223709881" style="zoom:45%;" />
+<img src=".pics/image-20250323223709881.png" alt="image-20250323223709881" style="zoom:45%;" />
 
 #### 多集群高可用发布
 
@@ -5219,7 +5155,7 @@ def doMonitor(): Unit
 - 在cmdb平台上登记flink应用高可用架构以及信息，发布前会校验；
 - 正式发布流程，通过高可用策略把物料发步到不同集群，带上source的jsaon字段，包括了物料包md5、发布人、一致性标志位等信息，为后续一致性启动做准备
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250323223324926.png" alt="image-20250323223324926" style="zoom:30%;" />
+<img src=".pics/image-20250323223324926.png" alt="image-20250323223324926" style="zoom:30%;" />
 
 ##### 物料包打包格式
 
@@ -5306,7 +5242,7 @@ def doMonitor(): Unit
 
 - 比如对于容灾集群只能发布策略中带BAK的job，比如singleWithBak、doublewithbak、managerslavewithbak。因此我们会在发布前进行 批量检查，检查当前任务的“wds.streamis.app.highavailable.policy”参数值是否符合当前发布集群的高可用策略，如果不符合条件，则检查失败。
 
-![image-20250326170920888](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326170920888.png)
+![image-20250326170920888](.pics/image-20250326170920888.png)
 
 ##### 在cmdb平台上登记flink应用高可用架构以及信息
 
@@ -5316,9 +5252,9 @@ def doMonitor(): Unit
 
 ​	同时使用定时脚本巡检高可用策略与cmdb登记的是否一致
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326171314170.png" alt="image-20250326171314170" style="zoom:90%;" />
+<img src=".pics/image-20250326171314170.png" alt="image-20250326171314170" style="zoom:90%;" />
 
-![image-20250326171339510](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326171339510.png)
+![image-20250326171339510](.pics/image-20250326171339510.png)
 
 
 
@@ -5346,74 +5282,7 @@ job-list
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250326172332530.png" alt="image-20250326172332530" style="zoom: 33%;" />
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326172342828.png?token=ARFL34BE67E43UD6L43AQH3I565KG" alt="image-20250326172342828" style="zoom: 33%;" />
-
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326171906844.png?token=ARFL34GBNB7ZR4DXMFJ3WUDI565KG" alt="image-20250326171906844" style="zoom:33%;" />
-
-##### 一致性检查
-
-**脚本一致性检查流程：**
-
-- 读取当前job的高可用策略，看他是否是主备或者是双活策略，如果是的话就会进入一致性校验的主流程，否则就会跳过校验。
-- 具体的校验主流程主要是通过第一次发布传入的source参数来校验一致性，检查主备集群中source字段的物料包md5和发布人是否一致，若一致则将标志位置为true并将成功信息塞入message字段中；若不一致则将标志位置为false，并将具体不一样的物料信息传入message，更新source字段的这两个key到数据库，最后汇总检查结果。
-
-**source字段结构如下：**
-
-```json
-{
- "pkgName": "$pkgName",
- "deployUser": "$deployUser",
- "createTime": "$createTime",
- "source":"$source",
- "isHighAvailable":"$isHighAvailable",
- "highAvailableMessage":"首次上传",
- "token":"streamis0.3.8"
-}
-```
-
-<img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250326172455273.png" alt="image-20250326172455273" style="zoom:80%;" />
-
-##### 启动任务
-
-​	一致性检查后则开始对主备集群的job发起启动命令，通过**后台服务代码**读取source字段中的一致性标志位和来源，从而判断job是否能够启动，判断一致性通过后才会最终启动job，否则最终无法启动job。
-
-- 首先判断高可用执行开关 是否开启，若开启则会进行下一步；
-- 判断双活策略key（wds.streamis.app.highavailable.policy）是否为"双活、主备"，是double则会继续校验一致性；否则会直接检查通过并提示当前任务是单活
-- 继续判断source中的source字段是否为aomp，若来自aomp则会继续校验一致性；否则会直接检查通过并提示当前任务不是来自aomp
-- 最后判断isHighAvailable参数是否为true，为true则允许job启动，否则不能启动。
-
-**通过最终校验后，开始启动任务：**
-
-- **若发布时的"wds.streamis.app.highavailable.policy"参数为double，则启动时会同时启动主备两个集群的job；若参数为single，则启动时会启动主集群的job，主集群为启动时设定的地址（可在配置差异化变量方案的步骤查看）；若为managerSlave则也只会启动主集群的job。**
-
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326173309369.png?token=ARFL34DHJTL2L2G5S2I3AU3I565KI" alt="image-20250326173309369" style="zoom: 35%;" />
-
-#### Streamis双活应用的数据一致性问题
-
-​	**==流式应用方需确保幂等问题，即就算作业重启，不会存在数据重复计算、漏算等问题==**
-
-​	**<font color = '#8D0101'>BDP集群每天会定时进行一次数据备份，数据时效为T-1。Hadoop平台无法做到数据实时同步，只能通过定时同步的方式对数据进行备份，对于Flink实时处理的数据如有更高的数据时效需求，应自行设计外部存储的数据备份方案。</font>**
-
-​	**<font color = '#8D0101'>双活通常指两个数据中心同时运行，互为备份。当某个数据中心故障时，流量会切换到另一个数据中心，由存活的应用继续处理数据。</font>**若数据同步是双向的，每个机房可能都有全量数据，但需处理同步冲突
-
-##### 确定数据来源
-
-在双活应用中，两个Flink作业可能从**同一数据源（如Kafka主题）消费数据**
-
-【**Kafka消费者组与分区分配**】
-
-- **原理**：通过配置**两个Flink应用使用同一Kafka消费者组**，Kafka会**根据负载均衡策略将主题分区分配给不同应用的消费者**。例如，若主题有10个分区，Kafka可能分配5个分区给应用A，5个分区给应用B。
-- **实现**：在Flink的KafkaSource中设置相同的消费者组ID（"group.id"），通过Kafka监控工具（如Kafka Manager）查看分区分配情况，确认哪个应用消费了哪些分区。
-- **挑战**：需确保作业配置一致，避免分区分配冲突。分区倾斜可能导致性能不均，需优化分区策略。
-
-【**元数据标记**】
-
-- **原理**：在Flink作业的处理管道中为输出数据添加标识，如通过map函数添加“application_id”字段，标明是哪个应用处理的。
-
-- **实现**：在代码中为每个应用配置唯一标识比如ID（通过环境变量或配置文件），在DataStream API中添加，并添加到输出。例如：
-
-  ```java
-  DataStream<Output> output = input.map(event -> new Output(event, appId));
+<img src=".pics/image-20250326172342828.png));
   ```
 
 - **优势**：下游系统可直接根据标识识别数据来源，灵活性高。
@@ -5466,36 +5335,7 @@ job-list
 
 ==**【详细设计过程】**==
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250327105630356.png?token=ARFL34AU7EYEPH5RFXUARMTI565KI" alt="image-20250327105630356" style="zoom:70%;" />
-
-**【包含的函数】**
-
-1. **check_cluster_status** : 检查当前集群是否为主集群，通过调用Streamis的API，决定是否执行同步。
-2. **kerberos_certification** : 执行Kerberos认证，确保后续HDFS操作的权限。
-3. **get_active_nn** : 从NameNode列表中找到当前Active的节点，确保HDFS操作的可用性。
-4. **pre_distcp** : 预检查，包括检查YARN任务状态、运行任务数是否超过限制、目标路径是否合法。
-5. **distcp_snapshot** : 使用hadoop distcp命令同步数据，包含重试机制。
-6. **execute_cmd** : 封装subprocess另起一个子进程执行命令，处理异常和输出。
-
-**【整个流程】**
-
-**（1）前置检查、权限认证**
-
-**步骤1：集群状态检查**
-
-- 发送HTTP GET请求到Streamis接口 `/streamis/streamJobManager/highAvailable/getHAMsg`，检查当前集群是否为主集群，是主集群则进行下个步骤，否则退出并告警
-
-**步骤2：Kerberos认证**
-
-- 执行 `kinit -kt <keytab> <user>` 命令，确保后续HDFS操作的权限，认证成功则进行下个步骤，否则发送告警并退出
-
-**步骤3：获取Active NameNode**
-
-- 遍历 `nn_str` 中的所有NameNode地址，对每个地址执行 `hdfs dfs -ls /flink`，若输出中无 `state standby`，标记为Active节点。
-
-**（2）Checkpoint同步流程**
-
-**步骤4：预检查 (`pre_distcp`)**
+<img src=".pics/image-20250327105630356.png)**
 
 **检查YARN任务状态** 
 
@@ -5561,7 +5401,7 @@ hadoop distcp \
 
 5.定期删除hdfs上过期的文件，以保留固定数量的快照文件。
 
-![image-20250326233822972](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326233822972.png?token=ARFL34EAEKEJJ7SIICRJ7I3I565KM)
+![image-20250326233822972](.pics/image-20250326233822972.png)
 
 **【原详细设计】**
 
@@ -6059,7 +5899,7 @@ if __name__ == '__main__':
 
 进入到工程里面，点击左上角按钮切换到”流式生产中心“，如果出现streamis的首页，则表示 DSS 已经成功集成了 Streamis。如下图：
 
-![image-20211230173839138](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/stream_product_center.png?token=ARFL34BCFYKZTGVD4DEGPVLI565KK)
+![image-20211230173839138](.pics/stream_product_center.png)
 
 
 ### 3. 核心指标 
@@ -6068,7 +5908,7 @@ if __name__ == '__main__':
 
 核心指标显示当前用户可查看到的上传到该项目执行的Flink任务的状态汇总，状态暂时有9种，显示状态名称和处于该状态的任务数量，具体内容如下图。
 
-![核心指标](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/home_page.png?token=ARFL34CBPYHNJC3DPUAVGN3I565KM)
+![核心指标](.pics/home_page.png)
 
 ### 4. 任务示例
 
@@ -6080,7 +5920,7 @@ if __name__ == '__main__':
 
 顶部Scriptis菜单创建一个脚本文件，脚本类型选择Flink,如下图所示：
 
-![进入FlinkSQL](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/enter_flinksql-2476903.png?token=ARFL34HZCAOJ7FOW5NO52OLI564UK)
+![进入FlinkSQL](.pics/enter_flinksql-2476903.png)
 
 ![create_script_file.png](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/create_script_file-2476903.png)
 
@@ -6106,7 +5946,7 @@ meta.json是该任务的元数据信息，streamisjobtest为flinksql文件
 
 ![flinksql_job_use_demo](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/flinksql_job_use_demo-2476903.png)
 
-![flinksql_job_use_demo3](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/flinksql_job_use_demo3-2476903.png?token=ARFL34G6R7YTCF7QIO7XS63I564UK)
+![flinksql_job_use_demo3](.pics/flinksql_job_use_demo3-2476903.png)
 
 将SQL文件和meta.json文件打包成一个zip文件，注意：只能打包成zip文件，其他格式如rar、7z等格式无法识别
 
@@ -6116,7 +5956,7 @@ meta.json是该任务的元数据信息，streamisjobtest为flinksql文件
 
 本地开发Flink应用程序，并打包成jar包形式
 
-![flinkJar](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/flinkjar.png?token=ARFL34G3UV43GS7GZUGM24DI564UI)
+![flinkJar](.pics/flinkjar.png)
 
 ##### 4.2.2.  文件打包层级
 
@@ -6132,7 +5972,7 @@ meta.json是该任务的元数据信息，resource.txt为flink应用使用到的
 
 ![flinkjar_zip](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/flinkjar_zip.png)
 
-![flinkjar_metajson](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/flinkjar_metajson.png?token=ARFL34CXDUYPFOAIAI6DMPTI564UO)
+![flinkjar_metajson](.pics/flinkjar_metajson.png)
 
 #### 4.3. meta.json文件格式详解
 
@@ -6204,7 +6044,7 @@ meta.json是StreamisJob的元数据信息，其格式为：
     }
 ```
 
- ![default_config1](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/default_config1.png?token=ARFL34E32O4TBTVPWLLXPADI564UO) 
+ ![default_config1](.pics/default_config1.png) 
 
  ![default_config2](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/default_config2.png) 
 
@@ -6217,21 +6057,21 @@ meta.json是StreamisJob的元数据信息，其格式为：
 发布模板：
  ![aomp_based_release](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/aomp_based_release.png)
 启动模板：
- ![aomp_based_start](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/aomp_based_start.png?token=ARFL34GJIAMNDCYVKYPGHHLI564UO)
+ ![aomp_based_start](.pics/aomp_based_start.png)
 
 ##### 4.4.1. 上传工程资源文件
 
 进入到DSS页面，新建工程后，选择“流式生产中心”进入，点击“工程资源文件”
 
-![job_resource1](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/job_resource1.png?token=ARFL34AJ5K3BYR23SVTHC33I564UQ)
+![job_resource1](.pics/job_resource1.png)
 
 点击“导入”进行资源包的导入，选择文件系统的资源包，并设置版本号
 
-![job_resource2](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/job_resource2.png?token=ARFL34EPWYVLL6AYERMF323I564US)
+![job_resource2](.pics/job_resource2.png)
 
 导入完成
 
-![job_resource3](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/job_resource3.png?token=ARFL34DWQT5JLCP4QJUHYZTI564UU)
+![job_resource3](.pics/job_resource3.png)
 
 ##### 4.4.2. 上传作业的zip包
 
@@ -6255,7 +6095,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 上传项目文件
 
-![project_source_file_import](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/project_source_file_import.png?token=ARFL34BQGTL4EY5GWSAVYO3I564UY)
+![project_source_file_import](.pics/project_source_file_import.png)
 
 ### 6. Streamis作业介绍
 
@@ -6263,7 +6103,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 #### 6.1 运行情况
 
-![stream_job_detail](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/stream_job_detail.png?token=ARFL34EZ56SYV6TL2PE737TI564UW)
+![stream_job_detail](.pics/stream_job_detail.png)
 
 #### 6.2 执行历史
 
@@ -6277,15 +6117,15 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 ![job_log1](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/job_log1.png)
 
-![job_log2](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/job_log2.png?token=ARFL34FQG4GY45XI4MO3GQLI564UY)
+![job_log2](.pics/job_log2.png)
 
 #### 6.3 配置
 
 给Streamis任务配置一些flink资源参数以及checkpoint的参数
 
-![image-20211231101503678](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/stream_job_config_1.png?token=ARFL34EITWOEUK2YE2MDUPDI564U2)
+![image-20211231101503678](.pics/stream_job_config_1.png)
 
-![image-20211231101503678](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/stream_job_config_2.png?token=ARFL34BTVITNSUARRVFHTHDI564U4)
+![image-20211231101503678](.pics/stream_job_config_2.png)
 
 #### 6.4任务详情
 
@@ -6299,7 +6139,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 - **Flink SQL任务详情**
 
-![任务详情](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/stream_job_flinksql_jobcontent.png?token=ARFL34AOVDELLP2LDJNBNSLI564U4)
+![任务详情](.pics/stream_job_flinksql_jobcontent.png)
 
 &nbsp;&nbsp;Flink SQL任务详情展示了该任务的SQL语句。
 
@@ -6307,7 +6147,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 正在运行的Streamis任务可以通过该按钮进入到yarn管理界面上的查看flink任务运行情况。
 
-![image-20211231102020703](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20211231102020703.png?token=ARFL34AWN6CZ44NM5QLTJ73I564U6)
+![image-20211231102020703](.pics/image-20211231102020703.png)
 
 ### 7. Streamis作业生命周期管理
 
@@ -6317,11 +6157,11 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 ![job_start1](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/job_start1.png)
 
-![job_start2](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/job_start2.png?token=ARFL34FT7THAELURLM5RZ7LI564U6)
+![job_start2](.pics/job_start2.png)
 
 作业启动会进行前置信息检查，会检查作业的版本信息和快照信息，当作业有检查信息需要用户确认时，则会弹出弹窗；对于批量重启的场景，可以勾选“确认所以批量作业”进行一次性确认
 
-![inspect1](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/inspect1.png?token=ARFL34DXWLSAIAYZMCNE7KTI564VA)
+![inspect1](.pics/inspect1.png)
 
 #### 7.2. 作业停止
 
@@ -6335,9 +6175,9 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 点击作业左边的3个竖点中的“快照【savepoint】 ”可保存快照
 
-![savepoint1](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/savepoint1.png?token=ARFL34B7PU6OAULSDHIX5C3I564VA)
+![savepoint1](.pics/savepoint1.png)
 
-![savepoint2](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/savepoint2.png?token=ARFL34G2PEDJFM34KIA777LI564VC)
+![savepoint2](.pics/savepoint2.png)
 
 #### 7.4. 批量操作功能
 
@@ -6351,9 +6191,9 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 用户可以在页面对任务进行禁用启用：
 
-![enable_and_disable_01](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/enable_and_disable_01.png?token=ARFL34CYVJMHB2R6BSTEOTLI564VE)
+![enable_and_disable_01](.pics/enable_and_disable_01.png)
 
-![enable_and_disable_02](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/enable_and_disable_02.png?token=ARFL34HDVIVCKIFDNUJUXWLI564VE)
+![enable_and_disable_02](.pics/enable_and_disable_02.png)
 
 可以筛选已启用、已禁用和全部job：
 
@@ -6361,7 +6201,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 已禁用的job无法进行启动等操作：
 
-![enable_and_disable_04](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/enable_and_disable_04.png?token=ARFL34DQVKMZKKBS4DACLYLI564VG)
+![enable_and_disable_04](.pics/enable_and_disable_04.png)
 
 ### 8. Streamis版本新增特性
 
@@ -6396,7 +6236,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 **①首先在工程资源文件上传log4j.properties**
 
-![1.1](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/0.3.2.1.png?token=ARFL34CQYJKPXBJXMK5N663I564VI)
+![1.1](.pics/0.3.2.1.png)
 
 **②在meta.json 配置文件中添加参数 "resources": [log4j.properties]**
 
@@ -6421,29 +6261,29 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 支持继续标签筛选任务
 
-![2.1](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/2.1.png?token=ARFL34AXLFWY5NJVDB7M42TI564VI)
+![2.1](.pics/2.1.png)
 
 #### 8.4. 标签批量修改
 
 先点批量修改，然后选中多个任务，点 修改标签。在弹出窗口输入新标签内容，支持大小写字母、数字、逗号、下划线。
 
 ![3.1](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/3.1.png)
-![3.2](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/3.2.png?token=ARFL34GEE5UQ36QQFIRCSF3I564VK)
+![3.2](.pics/3.2.png)
 
 #### 8.5. 日志回调使用说明
 
-1、flink应用在启动会先向streamis发起注册，注册数据如下图所示 ![logs_call_back_01.png](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/logs_call_back_01.png?token=ARFL34GGUQJ47GNGR3IL2YLI564VK)
+1、flink应用在启动会先向streamis发起注册，注册数据如下图所示 ![logs_call_back_01.png](.pics/logs_call_back_01.png)
 
 2、定时任务：flink应用使用 Java 中的定时任务工具来定期发送心跳消息。上图中的heartbeat_time为记录的心跳时间
 
-3、streamis新增定时任务检测应用，streamis告警信息如下图所示 ![logs_call_back_02.png](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/logs_call_back_02.png?token=ARFL34AXYKB3HG65NJ2SNEDI564VQ)
- ![logs_call_back_03.png](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/logs_call_back_03.png?token=ARFL34GTPP5MLUNJJR4XE73I564VM)
+3、streamis新增定时任务检测应用，streamis告警信息如下图所示 ![logs_call_back_02.png](.pics/logs_call_back_02.png)
+ ![logs_call_back_03.png](.pics/logs_call_back_03.png)
 
 ## Steamis产品截图
 
 **【生产中心】**
 
-![企业微信截图_17424614571701](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424614571701.png?token=ARFL34AZGUM23YALZA2SPE3I564VO)
+![企业微信截图_17424614571701](.pics/企业微信截图_17424614571701.png)
 
 **【运行情况】**
 
@@ -6457,25 +6297,23 @@ Streamis首页-核心指标右上角-工程资源文件。
 
 <img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424601941298.png" alt="企业微信截图_17424601941298" style="zoom:67%;" />
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424604422726.png?token=ARFL34EPNO7OD6BYXVW27O3I564VQ" alt="企业微信截图_17424604422726" style="zoom:67%;" />
+<img src=".pics/企业微信截图_17424604422726.png)
 
-![企业微信截图_17424604586542](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424604586542.png)
-
-![企业微信截图_17424604676047](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424604676047.png?token=ARFL34CCMPRTT2OEJD445FLI564VS)
+![企业微信截图_17424604676047](.pics/企业微信截图_17424604676047.png)
 
 ![企业微信截图_17424604797635](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424604797635.png)
 
-![企业微信截图_17424605021312](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424605021312.png?token=ARFL34GYNAKIKN6NN5XUBTLI564VS)
+![企业微信截图_17424605021312](.pics/企业微信截图_17424605021312.png)
 
 **【任务详情】**
 
-![企业微信截图_17424606654455](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424606654455.png?token=ARFL34HP4DWTKMT3OENR5GLI564VU)
+![企业微信截图_17424606654455](.pics/企业微信截图_17424606654455.png)
 
 ![企业微信截图_17424606762072](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424606762072.png)
 
 **【告警】**
 
-![企业微信截图_17424607188533](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424607188533.png?token=ARFL34DBFPDB54NKL5OFKDDI564VW)
+![企业微信截图_17424607188533](.pics/企业微信截图_17424607188533.png)
 
 **【物料】**
 
@@ -6493,171 +6331,7 @@ Streamis首页-核心指标右上角-工程资源文件。
 - 现有的BINLOG流式数据同步方案时效小时级，存在较多的可用性问题，另外每个新需求也需要较大版本人力开发，响应慢。每个规则一个应有，无法资源复用
 - 基于以上背景，希望实现一套低延时、可用性高、资源消耗低、人力成本低的配置化数据集成降本增效方案，降低数据同步需求需求的开发人力和资源小号。
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250227154728743.png?token=ARFL34CZX77IGIZHTEWKL5DI564VY" alt="image-20250227154728743" style="zoom:85%;" />
-
-- 绿色线条为数据流动方向。
-- 红色框为现存链路存在问题：
-  - Binlog采集大数据记录丢失
-  - Binlog采集元数据丢失。元数据变更不够自动化。
-  - DM数据提单，过多手动补充的内容
-  - 需要定时任务，根据binlog类型，来执行相应数据操作。
-
-**<u>（2）现有方案存在的问题</u>**
-
-①新表要提新单。提单过程复杂，每个需要科技排期开发上线。且每个新表一个任务，资源占用大。
-
-②小时级延迟
-
-③数据链路长，可用性存在问题
-
-- kafka抖动存在丢数可能
-
-- 仅支持单活，无高可用支持
-
-④kafka限制topic大小为1MB，超过的消息都丢弃
-
-## application.properties配置
-
-```properties
-server.port=9400
-spring.application.name=streamis-server
-spring.mvc.servlet.path=/api/rest_j/v1
-spring.servlet.multipart.enabled=true
-spring.servlet.multipart.max-file-size=1024MB
-spring.servlet.multipart.max-request-size=1024MB
-spring.main.allow-bean-definition-overriding=true
-
-eureka.client.serviceUrl.defaultZone=[@GLOBAL_LINKIS_GZ_FLOWMAIN_UAT_EUREKA_URL]
-eureka.instance.metadata-map.test=wedatasphere
-
-management.endpoints.web.exposure.include=refresh,info
-logging.config.classpath=log4j2.xml
-
-feature.enabled=true
-
-# after linkis 1.6.0
-#spring.main.allow-circular-references=true
-spring.mvc.pathmatch.matching-strategy=ant_path_matcher
-spring.cloud.loadbalancer.cache.enabled=false
-```
-
-**1. 基础服务配置**
-
-- **`server.port=9400`**
-
-  - **作用** ：指定应用的HTTP服务端口为 `9400`，即Spring Boot服务监听的端口号为 `9400`，客户端通过此端口访问服务。。
-
-  - **场景** ：避免端口冲突，明确服务暴露的端口。
-
-- **`spring.application.name=streamis-server`**
-
-  - **作用** ：定义应用名称为 `streamis-server`。
-
-  - **场景** ：服务注册到Eureka时，该名称作为服务唯一标识（Service ID）；日志标识
-
-**2.请求路径与文件上传配置**
-
-- **`spring.mvc.servlet.path=/api/rest_j/v1`**
-  - **作用** ：设置Spring MVC的Servlet路径前缀为 `/api/rest_j/v1`。
-  - **框架** ：Spring MVC。
-  - **场景** ：统一API版本控制，所有接口需以 `/api/rest_j/v1` 开头（如 `/api/rest_j/v1/users`）。
-
-- **`spring.servlet.multipart.enabled=true`**
-
-  - **作用** ：启用对 `multipart/form-data` 请求的支持（如文件上传）。
-
-  - **框架** ：Spring Boot。
-
-  - **场景** ：允许客户端通过HTTP上传文件。
-
-- **`spring.servlet.multipart.max-file-size=1024MB`**
-
-  - **作用** ：限制单个上传文件的最大大小为 `1GB`。
-
-  - **框架** ：Spring Boot。
-
-  - **场景** ：防止大文件上传耗尽服务器资源。
-
-- **`spring.servlet.multipart.max-request-size=1024MB`**
-
-  - **作用** ：限制整个HTTP请求的最大大小为 `1GB`（包括文件和其他表单数据）。
-
-  - **框架** ：Spring Boot。
-
-- **场景** ：防止恶意请求或意外的大请求导致内存溢出。
-
-**3. Bean管理与依赖注入**
-
-- **`spring.main.allow-bean-definition-overriding=true`**
-
-  - **作用** ：允许覆盖已存在的Bean定义。
-
-  - **框架** ：Spring Boot。
-
-  - **场景** ：在多模块项目或自动配置中，显式覆盖默认Bean（如自定义配置类）。
-
-**解释**：当Spring容器中存在**同名Bean** 时，此配置允许后加载的Bean定义**覆盖**先前的定义。
-
-Eg：若两个配置类分别定义了名为 `userService` 的Bean，后加载的Bean会替换已存在的定义
-
-- **默认行为** ：
-  Spring Boot 2.1.0+ 默认禁止覆盖（`spring.main.allow-bean-definition-overriding=false`），以避免意外覆盖导致的不可预测行为
-
-**4. 服务发现（Eureka）配置**
-
-- **`eureka.client.serviceUrl.defaultZone=[@GLOBAL_LINKIS_GZ_FLOWMAIN_UAT_EUREKA_URL]`**
-
-  - **作用** ：指定Eureka服务注册中心的地址。
-
-  - **框架** ：Spring Cloud Netflix Eureka。
-
-  - **场景** ：服务启动时向该地址注册自身，并发现其他服务。`[@...]` 是占位符，需在部署时替换为实际URL（如 `http://eureka-server:8761/eureka`）。
-
-- **`eureka.instance.metadata-map.test=wedatasphere`**
-
-  - **作用** ：为当前服务实例添加元数据 `test=wedatasphere`。
-
-  - **框架** ：Spring Cloud Netflix Eureka。
-
-  - **场景** ：用于服务分类或自定义路由策略（如灰度发布）。
-
-**5. 监控与管理端点**
-
-- **`management.endpoints.web.exposure.include=refresh,info`**
-  - **作用** ：暴露Spring Boot Actuator的 `refresh` 和 `info` 端点。
-
-  - **框架** ：Spring Boot Actuator。
-
-  - 场景 ，便于运维管理：
-    - `/actuator/refresh`：动态刷新配置（需配合 `@RefreshScope`）。
-    - `/actuator/info`：返回应用自定义信息（如版本号）。
-
-- **`/actuator/refresh`**
-  - 作用 ：**<font color = '#8D0101'>动态刷新</font>**应用的配置（如从配置中心拉取最新配置），无需重启服务
-
-- 使用条件 ：
-  - 需配合 `@RefreshScope` 注解（通常标注在需要动态刷新配置的Bean上）。
-  - 适用于集成Spring Cloud Config等配置中心的场景。
-
-**6. 日志配置**
-
-- **`logging.config.classpath=log4j2.xml`**
-
-  - **作用** ：指定Log4j2的配置文件路径为类路径下的 `log4j2.xml`。
-
-  - **框架** ：Log4j2。
-
-  - **场景** ：自定义日志输出格式、级别和目标（如文件、控制台）。
-
-**7. 自定义功能开关**
-
-- **`feature.enabled=true`**
-
-  - **作用** ：自定义配置项，控制特定功能的启用/禁用。
-
-  - **框架** ：无（应用自定义）。
-
-  - **场景** ：通过 `@Value("${feature.enabled}")` 注入到代码中，动态开启/关闭功能（如实验性特性）。
+<img src=".pics/image-20250227154728743.png)` 注入到代码中，动态开启/关闭功能（如实验性特性）。
 
 **8. 兼容性配置**
 
@@ -6740,116 +6414,7 @@ Eg：若两个配置类分别定义了名为 `userService` 的Bean，后加载�
 
 <u>**2. 实例详情**</u>
 
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250313144527764.png?token=ARFL34CQJPNRVG4YUPKFIGTI564V2" alt="image-20250313144527764" style="zoom:50%;" />
-
-**（1）`<instanceId>bdpujes110002:streamis-server:9400</instanceId>`**
-
-- **含义** ：实例唯一标识，格式为 `主机名:应用名:端口`。
-
-- **自定义方式** ：可通过 `eureka.instance.instance-id` 修改，例如：
-
-  `eureka.instance.instance-id=${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}`
-
-**（2）`<hostName>bdpujes110002</hostName>`**
-
-- **含义** ：实例所在主机的名称（通过 `hostname` 命令获取）。
-- **问题排查** ：若服务调用失败，需检查主机名是否可被其他服务解析（DNS或本地hosts配置
-
-**（3）`<status>UP</status>`**
-
-- **含义** ：实例状态为“运行中”。其他可能状态包括 `DOWN`（健康检查失败）、`OUT_OF_SERVICE`（手动下线）等。
-- **状态更新** ：通过 `healthCheckUrl`（`/actuator/health`）的返回值决定
-
-<u>**3. 端口与安全配置**</u>
-
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250313144544987.png?token=ARFL34CHBDEUNO6CFVTEWSDI564V2" alt="image-20250313144544987" style="zoom:50%;" />
-
-**（1）`<port enabled="true">9400</port>`**
-
-- **含义** ：非SSL端口（HTTP）为 `9400`，与 `server.port=9400` 配置一致。
-- **作用** ：服务间通信默认使用此端口
-
-**（2）`<securePort enabled="false">443</securePort>`**
-
-- **含义** ：SSL端口（HTTPS）为 `443`，但未启用（`enabled="false"`）。
-- **启用方法** ：需配置SSL证书并设置 `server.ssl.*` 参数
-
-<u>**4. 租约与健康检查**</u> **`<leaseInfo>`**
-
-<img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250313144601667.png" alt="image-20250313144601667" style="zoom:50%;" />
-
-**（1）续约机制**
-
-- `renewalIntervalInSecs=30` ：客户端每30秒向Eureka Server发送一次心跳
-- `durationInSecs=90` ：若Eureka Server在90秒内未收到心跳，将剔除该实例
-
-**（2）时间戳**
-
-- `registrationTimestamp`：实例注册时间（Unix毫秒时间戳）。
-- `lastRenewalTimestamp`：最后一次心跳时间。
-
-<u>**5. 元数据（Metadata）**</u>
-
-<img src="/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250313144752621.png" alt="image-20250313144752621" style="zoom:50%;" />
-
-**（1）`<metadata><test>wedatasphere</test></metadata>`**
-
-- **含义** ：自定义元数据 `test=wedatasphere`，通过 `eureka.instance.metadata-map.test=wedatasphere` 配置。
-- **用途** ：可用于灰度发布、路由策略或监控分类
-
-**（2）`<management.port>9400</management.port>`**
-
-- **含义** ：Actuator管理端点的端口（与主应用端口一致）。
-- **作用** ：通过 `/actuator/info` 和 `/actuator/health` 提供元数据和健康状态
-
-**<u>6. 服务发现与调用</u>**
-
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250313145153771.png?token=ARFL34BZPZDZRRCNZH2SBMLI564V6" alt="image-20250313145153771" style="zoom:50%;" />
-
-**（1）`<vipAddress>streamis-server</vipAddress>`**
-
-- **含义** ：虚拟IP地址（VIP），通常与应用名一致。
-- 用途 ：客户端通过VIP（如 `http://streamis-server/api/...`）调用服务，Ribbon会自动解析为具体实例
-
-**（2）`<homePageUrl>` 和 `<statusPageUrl>`**
-
-- **`homePageUrl`** ：应用根路径（`http://bdpujes110002:9400/`）。
-- **`statusPageUrl`** ：健康状态页面（`/actuator/info`），返回自定义信息（如版本号）
-
-<u>**7. 其他关键字段**</u>
-
-<img src="https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250313145314173.png?token=ARFL34BMIQAVKAEINTMHO53I564V6" alt="image-20250313145314173" style="zoom:50%;" />
-
-- **`<isCoordinatingDiscoveryServer>false</isCoordinatingDiscoveryServer>`** ：标识该实例是否为Eureka Server节点（`false` 表示是普通服务实例）。
-- **`<actionType>ADDED</actionType>`** ：实例注册到Eureka Server的动作类型（`ADDED` 表示首次注册）。
-
-## Streamis服务启动脚本（包括jvm参数和启动命令）
-
-### 注释版脚本
-
-```shell
-#!/bin/bash
-
-##################
-#1.路径与环境准备
-##################
-cd `dirname $0`  # 进入脚本所在目录
-cd ..            # 返回上一级目录（项目根目录）
-export HOME=`pwd` # 设置 HOME 环境变量为当前路径（项目根目录）
-source $HOME/conf/stms-env.sh # 加载环境配置文件（定义 STREAMIS_HOME 等变量）
-
-#####################
-#2. 配置路径与日志目录
-#####################
-export STREAMIS_CONF_PATH=${STREAMIS_CONF_DIR:-$STREAMIS_HOME/conf} # 配置文件路径，默认为 $STREAMIS_HOME/conf
-export STREAMIS_LOG_PATH=${STREAMIS_LOG_DIR:-$STREAMIS_HOME/logs}  # 日志文件路径，默认为 $STREAMIS_HOME/logs
-mkdir -p $STREAMIS_LOG_PATH # 创建日志目录（如果不存在）
-
-#####################
-#3. 检查服务是否已运行
-#####################
-if [[ -f "${STREAMIS_PID}" ]]; then # 检查 PID 文件是否存在（记录进程ID）
-    pid=$(cat ${STREAMIS_PID})      # 读取 PID 文件中的进程ID
+<img src=".pics/image-20250313144527764.png)      # 读取 PID 文件中的进程ID
     if kill -0 ${pid} >/dev/null 2>&1; then # 验证进程是否存活
       echo "Streamis Server is already running." # 若存活，提示服务已运行
       return 0; # 退出脚本
@@ -7436,7 +7001,7 @@ Flink应用失败重拉告警
 
 - 告警样例：
 
-![企业微信截图_17424574118687](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/企业微信截图_17424574118687.png?token=ARFL34F66HOMOV52BZAEKALI564QY)
+![企业微信截图_17424574118687](.pics/企业微信截图_17424574118687.png)
 
 - 告警描述：该告警表明因为一些外部因素导致了Flink流应用的失败，通常会附带自动重拉策略。
 - 处理SOP：
@@ -7450,11 +7015,11 @@ Flink应用失败重拉告警
 
 ![企业微信截图_17424576323859](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/企业微信截图_17424576323859.png)
 
-![image-20250326202732913](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326202732913.png?token=ARFL34HHTMSW64LVNYNTAK3I564MS)
+![image-20250326202732913](.pics/image-20250326202732913.png)
 
 ​	其中包括了stms.process.count进程数量检测，通过服务TCP端口${STMS-PORT}进行。 然后再进入生产环境managis(ops.bdp.webank.com)中，在监控管理台-监控模板上绑定监控模板和具体服务：
 
-![stms_monitor_ops[1]](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/stms_monitor_ops%5B1%5D.png?token=ARFL34EHLWRQK4EUBRLO3WTI564MS)
+![stms_monitor_ops[1]](.pics/stms_monitor_ops%5B1%5D.png)
 
  	以上的进程存活性告警一旦产生，平台运维则应该参照服务进程启停指南对进程进行恢复。
 
@@ -7462,7 +7027,7 @@ Flink应用失败重拉告警
 
 ​	统一使用zabbix进行GC监控，zabbix管理地址为zabbix.bdp.webank.com，创建一个流式平台监控模板。
 
-![image-20250326202754383](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326202754383.png?token=ARFL34CFVV5CVKVHXXADBJDI564MU)
+![image-20250326202754383](.pics/image-20250326202754383.png)
 
 ==**十分钟内full gc次数大于10次、old区占用大于99%**==
 
@@ -7472,7 +7037,7 @@ Flink应用失败重拉告警
   jmap -histo $pid
   ```
 
-![image-20250326202903106](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326202903106.png?token=ARFL34A4FYPABWVDM2J54Y3I564MS)
+![image-20250326202903106](.pics/image-20250326202903106.png)
 
 - 查看服务进程的堆栈信息，判断线程有无block或者死锁:
 
@@ -7480,7 +7045,7 @@ Flink应用失败重拉告警
   jstack $pid
   ```
 
-![image-20250326203036607](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326203036607.png?token=ARFL34FONX5OHQTEYDQBBZ3I564MW)
+![image-20250326203036607](.pics/image-20250326203036607.png)
 
 - 查看垃圾回收相关信息：gc次数、gc时间等。
 
@@ -7496,27 +7061,27 @@ Flink应用失败重拉告警
 
 （1）点击job名，查看详情
 
-![image-20250326222428722](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326222428722.png?token=ARFL34BFFG6IRFJCA5VBBNDI564MW)
+![image-20250326222428722](.pics/image-20250326222428722.png)
 
 （2）点击执行历史页面，选择要查看的历史记录，点历史日志
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps107.jpg?token=ARFL34F43FFATFO6XY7EUI3I564MY) 
+![img](.pics/wps107.jpg) 
 
 （3）默认客户端日志如下
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps108.jpg?token=ARFL34GGCB5D6AMC54QY5BDI564MY) 
+![img](.pics/wps108.jpg) 
 
 如果看不到客户端日志，如下图，可尝试复制引擎实例信息
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps109.jpg?token=ARFL34CTHMLXQEEIVAHLSQDI564MY) 
+![img](.pics/wps109.jpg) 
 
 （4）在运行情况页面，复制客户端引擎实例 如 gz.bdz.bdplinkisrcs05.webank:36616
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps110.jpg?token=ARFL34EQH6BCW7GTEKAU4RTI564M2) 
+![img](.pics/wps110.jpg) 
 
 （5）点击顶部管理，进入管理台--资源管理--历史引擎管理，输入复制的实例，点搜索
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps111.jpg?token=ARFL34FR2JLJ6J7YUNQRXQ3I564M2) 
+![img](.pics/wps111.jpg) 
 
 （6）点查看日志，可查看客户端日志
 
@@ -7556,17 +7121,17 @@ b. 点击RUNNING、FINISHED
 
 RUNNING：在执行的时候可以看到作业，执行完之后只能在FINISHED里面看到。
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps115.jpg?token=ARFL34EJ2FUEOGMUPXT6BH3I564NA) 
+![img](.pics/wps115.jpg) 
 
 **查看YARN作业的日志**
 
 a. 当作业跑完之后，进入FINISHED，点击作业的History，跳转到historyserver 
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps116.jpg?token=ARFL34GJNM27ALZFXE6HHATI564M6) 
+![img](.pics/wps116.jpg) 
 
  类似如下:
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps117.jpg?token=ARFL34GXOOLTK5F7NM6STRTI564M6) 
+![img](.pics/wps117.jpg) 
 
 **2）通过flink页面查看**
 
@@ -7578,7 +7143,7 @@ a. 当作业跑完之后，进入FINISHED，点击作业的History，跳转到hi
 
 点击application，输入applicationld，即可查询到对应appld。
 
-![img](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/wps122.jpg?token=ARFL34HD2P5C4RJESPSW3GDI564NC) 
+![img](.pics/wps122.jpg) 
 
 查询到之后，点击Application Master，即可进入flink页面。分别点击jobManager和TaskManager的loglist，可查看运行中日志
 
