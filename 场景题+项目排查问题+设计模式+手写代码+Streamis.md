@@ -7688,4 +7688,4 @@ a. 当作业跑完之后，进入FINISHED，点击作业的History，跳转到hi
 
   ![image-20250326220032114](/Users/glexios/Library/Mobile Documents/com~apple~CloudDocs/Notes/面试笔记.assets/image-20250326220032114.png)
 
-  ![image-20250326220106603](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326220106603.png?token=ARFL34DTQUJYVU4NQRGOA5DI564NE)
+  ![image-20250326220106603](https://raw.githubusercontent.com/GLeXios/Notes/main/pics/image-20250326220106603.png)
