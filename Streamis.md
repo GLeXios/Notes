@@ -20,11 +20,11 @@
 
 | 环境             | 连接方式                                     | 安装目录                                                     | 访问方式                             | JOB发布接口机地址 |
 | :--------------- | :------------------------------------------- | :----------------------------------------------------------- | :----------------------------------- | :---------------- |
-| DEV开发环境      | 前端：10.107.98.242<br />后端：10.107.98.242 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://dev.streamis.bdap.weoa.com/   | --                |
-| SIT测试环境      | 前端：10.107.119.211<br />后端：10.107.97.36 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://sit.dss.bdp.weoa.com/         | --                |
-| BDAP-UAT测试环境 | 前端：10.107.119.46<br />后端：10.107.119.46 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://10.107.119.46:8088/           | --                |
-| UAT流式主集群    | 前端：172.21.8.221<br />后端：172.21.8.221   | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://uat.streamis.bdp.weoa.com/    | 172.21.8.221      |
-| UAT流式备集群    | 前端：10.108.193.83<br />后端：10.108.193.83 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://uat.streamisbak.bdp.weoa.com/ | 10.108.193.83     |
+| DEV开发环境      | 前端：10.12<br />后端：102 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://dev.streami.com/   | --                |
+| SIT测试环境      | 前端：10.107.<br />后端：10.10 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://sit.dss.oa.com/         | --                |
+| BDAP-UAT测试环境 | 前端：10.46<br />后端：10.46 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://10.1088/           | --                |
+| UAT流式主集群    | 前端：121<br />后端：1721   | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://uat.streamieoa.com/    | 172      |
+| UAT流式备集群    | 前端：10.103<br />后端：10.183 | 前端：/appcom/Install/streamis/streamis-web/dist<br />后端： /appcom/Install/streamis-server | http://uat.streamisbaoa.com/ | 10.13     |
 
 **推荐使用UAT流式主、备流式集群，主集群广州机房，备集群天津机房，可以用于验证双活或主备高可用应用发布**
 
@@ -34,36 +34,36 @@
 
 | 对应MANAGIS集群名 | DSS入口             | 机器                        | IP          | 接口机地址   |
 | :---------------- | :------------------ | :-------------------------- | :---------- | :----------- |
-| STM-DG-FLOW-PRD   | 10.134.244.132:8088 | xg.bdz.bdpstms040003.webank | 10.130.1.32 | 10.134.224.5 |
-| STM-DG-FLOW-PRD   | 10.134.244.132:8088 | xg.bdz.bdpstms040004.webank | 10.130.1.96 | 10.134.232.5 |
+| STM-DG-FLOW-PRD   | 10.134.248088 | xg.bdank | 10.1.32 | 104.5 |
+| STM-DG-FLOW-PRD   | 10.088 | xg.bdz.bdwebank | 10.196 | 1032.5 |
 
 #### STREAMIS龙岗流式集群 
 
 | 对应MANAGIS集群名 | DSS 入口           | 机器                        | IP          | 接口机地址     |
 | :---------------- | :----------------- | :-------------------------- | :---------- | :------------- |
-| STM-LG-FLOW-DR    | 10.170.16.167:8088 | lg.bdz.bdpstms050003.webank | 10.173.1.86 | 10.170.164.162 |
-| STM-LG-FLOW-DR    | 10.170.16.167:8088 | lg.bdz.bdpstms050004.webank | 10.173.2.25 | 10.170.16.139  |
+| STM-LG-FLOW-DR    | 10.170.16 | lg.bdz.3bank | 101.86 | 62 |
+| STM-LG-FLOW-DR    | 10.1708088 | lg.bdzbank | 10.5 | 109  |
 
 #### STREAMIS BDAP流式数仓集群 
 
 | 对应MANAGIS集群名              | DSS入口             | 机器                           | IP             |
 | :----------------------------- | :------------------ | :----------------------------- | :------------- |
-| LINKIS-DG-BDAP_LHFX-PRD-MAIN-2 | dss.lhfx.webank.com | xg.bdz.bdaplinkis180009.webank | 10.135.20.8    |
-| LINKIS-DG-BDAP_LHFX-PRD-MAIN-2 | dss.lhfx.webank.com | xg.bdz.bdaplinkis180009.webank | 10.134.248.143 |
+| LINKIS-DG-BDAP_LHFX-P| dss.lhfx.webankbank | 120.8    |
+| LINKIS-DG-BDAP_LH-MAIN-2 | dss.lhfx.web | xg.bdank | 10.13143 |
 
 #### STREAMIS 容灾集群 
 
 | 对应MANAGIS集群名 | DSS入口          | 机器                     | IP           |
 | :---------------- | :--------------- | :----------------------- | :----------- |
-| STM-SH-FLOW-DR    | 10.142.56.8:8088 | sh.bdz.stms110001.webank | 10.142.1.229 |
-| STM-SH-FLOW-DR    | 10.142.56.8:8088 | sh.bdz.stms110002.webank | 10.142.1.230 |
+| STM-SH-FLOW-DR    | 10.142088 | sh.bdzk | 10.1229 |
+| STM-SH-FLOW-DR    | 10.088 | sh.bdwebank |.230 |
 
 #### STREAMIS 准生产集群 
 
 | 对应MANAGIS集群名 | DSS入口          | 机器                        | IP           |
 | :---------------- | :--------------- | :-------------------------- | :----------- |
-| STM-SH-FLOW-ZSC   | 10.146.4.11:8088 | sh.bdz.bdpstms060001.webank | 10.146.8.13  |
-| STM-SH-FLOW-ZSC   | 10.146.4.11:8088 | sh.bdz.bdpstms060002.webank | 10.146.12.11 |
+| STM-SH-FLOW-ZSC   | 10.18 | sh.bdzwebank | 1013  |
+| STM-SH-FLOW-ZSC   | 10.18 | sh.bdzbank | 10.1 |
 
 
 
